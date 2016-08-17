@@ -2420,7 +2420,7 @@ body {
   font-family: 'LatoWeb', sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: #000; }
+  color: #3d3d3d; }
 
 ::selection {
   color: #fff;
@@ -2445,28 +2445,28 @@ body {
 .reveal h1 {
   font-size: 3em;
   font-weight: 700;
-  color: #000;
+  color: #3d3d3d;
   text-shadow: none; }
 
 .reveal h2 {
   font-size: 1.75em;
   font-weight: 600;
-  color: #000; }
+  color: #3d3d3d; }
 
 .reveal h3 {
   font-size: 1.5em;
   font-weight: 500;
-  color: #000; }
+  color: #3d3d3d; }
 
 .reveal h4 {
   font-size: 1.25em;
   font-weight: 400;
-  color: #000; }
+  color: #3d3d3d; }
 
 .reveal h5 {
   font-size: 1em;
   font-weight: 300;
-  color: #000; }
+  color: #3d3d3d; }
 
 /*********************************************
  * ALTERNATE HEADERS

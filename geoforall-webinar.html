@@ -1,8 +1,8 @@
 <section>
 <h3 style="color: #888">
     Geo4all Webinar</h3>
-<h1 style="margin-top: 0.5em">Tangible Landscape</h1>
-<h4>Helena Mitasova, Anna Petrasova, Brendan Harmon, Vaclav Petras, Payam Tabrizian, Ross Meentemeyer</h4>
+<h1 style="margin-top: 0.5em; color: #000">Tangible Landscape</h1>
+<h4 style="color: #000">Helena Mitasova, Anna Petrasova, Brendan Harmon, Vaclav Petras, Payam Tabrizian, Ross Meentemeyer</h4>
 <img height="100px" style="margin-top: 2em" src="img/cgaBlack.png">
 </section>
 
@@ -41,8 +41,11 @@ and a new PhD in Geospatial Analytics will start in 2017
 <img height="250px" src="img/illuminating_clay.png">
 <img height="250px" src="img/tangeoms_2.jpg">
 <p>An evolution of <b>Illuminating Clay</b> and the <b>Tangible Geospatial Modeling System</b></p>
-<p style="font-size:0.75em"><a href="http://tmg-trackr.media.mit.edu/publishedmedia/Papers/249-Illuminating%20Clay%20A%20Tangible/Published/PDF">Piper, Ben, Carlo Ratti, and Hiroshi Ishii. 2002. “Illuminating Clay: A Tangible Interface with Potential GRASS Applications.” In Proceedings of the Open Source GIS - GRASS Users Conference 2002. Trento, Italy.</a></p>
-<p style="font-size:0.75em"><a href="http://baharmon.github.io/publications/tangible_geospatial_modeling.pdf">L. Tateosian, H. Mitasova, B. A. Harmon, B. Fogleman, K. Weaver, and R. S. Harmon, “TanGeoMS: tangible geospatial modeling system.,” IEEE Trans. Vis. Comput. Graph., vol. 16, no. 6, pp. 1605–12, 2010.</a></p>
+<p style="font-size:0.75em">Piper, Ben, Carlo Ratti, and Hiroshi Ishii. 2002. 
+    <a href="http://tmg-trackr.media.mit.edu/publishedmedia/Papers/249-Illuminating%20Clay%20A%20Tangible/Published/PDF">“Illuminating Clay: A Tangible Interface with Potential GRASS Applications.”</a>
+     In Proceedings of the Open Source GIS - GRASS Users Conference 2002. Trento, Italy.</p>
+<p style="font-size:0.75em">L. Tateosian, H. Mitasova, B. A. Harmon, B. Fogleman, K. Weaver, and R. S. Harmon, <a href="http://baharmon.github.io/publications/tangible_geospatial_modeling.pdf">“TanGeoMS: tangible geospatial modeling system.,”</a>
+     IEEE Trans. Vis. Comput. Graph., vol. 16, no. 6, pp. 1605–12, 2010.</p>
 <p style="font-size:0.75em">Image source: <a href="http://tangible.media.mit.edu/project/illuminating-clay/">MIT Media Lab</a></p>
 </section>
 
@@ -111,9 +114,28 @@ Your browser does not support the video tag.
     <img width="45%" src="img/setup5.jpg">
 </section>
 
+<!-- Equipment list and budget -->
+<section>
+<h2>Hardware</h2>
+<table>
+<tr><th>Type</th><th>Product</th><th>Cost</th></tr>
+<tr><td>Computer</td><td>System 76 Oryx Pro</td><td>$1500</td></tr>
+<tr><td>Projector</td><td>Optoma ML750 WXGA 700 DLP LED</td><td>$500</td></tr>
+<tr><td>3D sensor</td><td>Xbox One Kinect</td><td>$100</td></tr>
+<tr><td></td><td>Kinect Adapter for Windows</td><td>$50</td></tr>
+<tr><td>Stand</td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
+<tr><td></td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
+<tr><td></td><td>Avenger F800 3-Inch Baby Wall Plate</td><td>$10</td></tr>
+<tr><td></td><td>Avenger F800 3-Inch Baby Wall Plate</td><td>$10</td></tr>
+<tr><td>Peripherals</td><td>HDMI cable</td><td>$10</td></tr>
+<tr><td></td><td>Extension cord</td><td>$10</td></tr>
+<tr><td>Modeling media</td><td>Waba Fun Kinetic Sand 11 Lbs</td><td>$50</td></tr>
+</table>
+</section>
+
 <!-- Fabrication -->
 <section>
-<h2 class="shadow">Building physical 3D models</h2>
+<h2>Building physical 3D models</h2>
 <img class="stretch" src="img/tangible_landscape.jpg">
 </section>
 
@@ -159,6 +181,49 @@ Your browser does not support the video tag.
 </video>
 <p>A 3-axis CNC milling machine to model a landscape in polymer-enriched sand using a plunge cut</p>
 </section>
+
+<!-- Software -->
+<section>
+<h2>Software</h2>
+<img class="stretch" src="img/software-schema.png">
+</section>
+
+<section>
+
+<h2>Software</h2>
+<table>
+<tr><th>Components</th><th>Use</th></tr>
+<tr>
+    <td><a href="https://github.com/tangible-landscape/grass-tangible-landscape">Tangible Landscape</a></td>
+    <td>GUI plugin for GRASS GIS for running Tangible Landscape</td></tr>
+<tr>
+    <td><a href="https://github.com/tangible-landscape/r.in.kinect">r.in.kinect</a></td>
+    <td>Add-on for importing and processing data from Kinect</td></tr>
+</table>
+<br/><br/>
+<h2>Dependencies</h2>
+<table>
+<tr><th>Program</th><th>Use</th></tr>
+<tr><td>libfreenect2</td><td>Drivers for Kinect v2</td></tr>
+<tr><td>PCL</td><td>Point cloud processing</td></tr>
+<tr><td>GRASS GIS 7</td><td>Geospatial modeling and visualization</td></tr>
+</table>
+</section>
+
+<section >
+<h2>Interfaces</h2>
+<ul style="font-size:120%">
+    <li>TUI: no GIS expertise needed, users control the landscape shape</li>
+    <li>GUI: to operate Tangible Landscape and control scanning and displayed layers</li>
+    <li>CLI: using Python GRASS API to create GIS workflows, see for example 
+        <a href="https://grasswiki.osgeo.org/wiki/Using_GRASS_GIS_through_Python_and_tangible_interfaces_(workshop_at_FOSS4G_NA_2016)">Workshop at FOSS4G NA 2016</a></li>
+</ul>
+<br/><br/>
+<img class="stretch" src="img/TUI_GUI_CLI.png">
+
+</section>
+
+
 
 <!-- Science with Tangible Landscape -->
 <section>
@@ -259,45 +324,7 @@ ISPRS International Journal of Geo-Information. 2015, 4, 942-956.
 </p>
 </section>
 
-<!-- Installation -->
-<section>
-<h2>Dependencies</h2>
-<table>
-<tr><th>Program</th><th>Use</th></tr>
-<tr><td>libfreenect2</td><td>Drivers for Kinect v2</td></tr>
-<tr><td>PCL</td><td>Point cloud processing</td></tr>
-<tr><td>GRASS GIS 7</td><td>Geospatial modeling and visualization</td></tr>
-</table>
-</section>
 
-<!-- Software -->
-<section>
-<h2>Software</h2>
-<table>
-<tr><th>Components</th><th>Type</th><th>Use</th></tr>
-<tr><td><a href="https://github.com/tangible-landscape/grass-tangible-landscape">grass-tangible-landscape</a></td><td>GRASS GIS plugin</td><td>Tangible interface for GRASS GIS</td></tr>
-<tr><td><a href="https://github.com/tangible-landscape/r.in.kinect">r.in.kinect</a></td><td>GRASS GIS addon</td><td>Import data from Kinect</td></tr>
-</table>
-</section>
-
-<!-- Equipment list and budget -->
-<section>
-<h2>Hardware</h2>
-<table>
-<tr><th>Type</th><th>Product</th><th>Cost</th></tr>
-<tr><td>Computer</td><td>System 76 Oryx Pro</td><td>$1500</td></tr>
-<tr><td>Projector</td><td>Optoma ML750 WXGA 700 DLP LED</td><td>$500</td></tr>
-<tr><td>3D sensor</td><td>Xbox One Kinect</td><td>$100</td></tr>
-<tr><td></td><td>Kinect Adapter for Windows</td><td>$50</td></tr>
-<tr><td>Stand</td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
-<tr><td></td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
-<tr><td></td><td>Avenger F800 3-Inch Baby Wall Plate</td><td>$10</td></tr>
-<tr><td></td><td>Avenger F800 3-Inch Baby Wall Plate</td><td>$10</td></tr>
-<tr><td>Peripherals</td><td>HDMI cable</td><td>$10</td></tr>
-<tr><td></td><td>Extension cord</td><td>$10</td></tr>
-<tr><td>Modeling media</td><td>Waba Fun Kinetic Sand 11 Lbs</td><td>$50</td></tr>
-</table>
-</section>
 
 
 
