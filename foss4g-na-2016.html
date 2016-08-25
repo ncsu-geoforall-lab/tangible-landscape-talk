@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="en">
+<!-- This is a generated file. Do not edit. -->
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tangible Landscape Webinar</title>
+
+        <meta name="description" content="Template for lecture slides of NCSU OSGeoREL courses">
+        <meta name="author" content="Vaclav Petras">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/osgeorel_greyscale.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For chalkboard plugin -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        body {
+        /*background-color: #FFF !important;*/
+        /*
+          background-image: url("pictures/elevation-nagshead.gif");
+          background-repeat: no-repeat;
+          background-position: left bottom;*/
+        }
+        .reveal section img {
+            background: transparent;
+            border: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+        /* for standalone frame */
+        /*
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        */
+        /* display: inline; background-color: #002B36; padding: 0px; margin: 0px */
+        .rounded-corners {
+            border: 0px solid black;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        a:hover {
+            color: #444 !important;
+            text-decoration: underline !important;
+        }
+        h1, h2, h3, h4, h5 {
+            text-transform: none !important;
+            /* word-break: keep-all; text-transform: none; font-size: 200%; line-height: 110%; */
+            /* color: #060 !important; */
+            /* color: #444 !important; */ /* grey from the wab page */
+            font-weight: bold !important;
+            -webkit-hyphens: none !important;
+            -moz-hyphens: none !important;
+            -ms-hyphens: none !important;
+            hyphens: none !important;
+            line-height: 110% !important;
+        }
+        .reveal .progress span {
+            background-color: #444 !important;
+        }
+        /* predefined element positioning */
+        .top {
+            /*position: relative;*/
+            top: 5%;
+            height: 45%; /* is the height even needed? */
+        }
+        .bottom {
+            height: 45%;
+        }
+        .ne {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .nw {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .se {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .sw {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+
+        /* classes for sections with predefined elements */
+        /* using !important because, reveal styles are applied afterwards  */
+        .right, .textimg > img, .textimg > video, .textimg > iframe, .imgtext > p, .imgtext > ul, .imgtext > ol, .imgtext > div {
+            float: right;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        .left, .imgtext > img, .imgtext > video, imgtext > iframe, .textimg > p, .textimg > ul, .textimg > ol, .textimg > div {
+            float: left;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        li > ul, li > ol {
+            font-size: 85% !important;
+            line-height: 110% !important;
+        }
+        .small {
+            font-size: smaller !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        .credit {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+<section>
+<h3 style="color: #888"><a href="https://2016.foss4g-na.org/session/tangible-landscape">FOSS4G NA 2016</a></h3>
+<h1 style="margin-top: 0.5em">Tangible Landscape</h1>
+<h4>Brendan Harmon, Anna Petrasova, Vaclav Petras, Helena Mitasova, &amp; Ross Meentemeyer</h4>
+<img height="100px" style="margin-top: 2em" src="img/cgaBlack.png">
+</section>
+
+<!-- Tangible Landscape -->
+<section data-background="img/tangible_landscape.jpg">
+<h1 class="shadow">Tangible Landscape</h1>
+<h3 class="shadow">A tangible user interface powered by open source GIS</h3>
+<img height="150px" src="img/logo_black.png">
+</section>
+
+<!-- History -->
+<section>
+<h2>History</h2>
+<img height="250px" src="img/illuminating_clay.png">
+<img height="250px" src="img/tangeoms_2.jpg">
+<p>An evolution of <b>Illuminating Clay</b> and the <b>Tangible Geospatial Modeling System</b></p>
+<p style="font-size:0.75em"><a href="http://tmg-trackr.media.mit.edu/publishedmedia/Papers/249-Illuminating%20Clay%20A%20Tangible/Published/PDF">Piper, Ben, Carlo Ratti, and Hiroshi Ishii. 2002. “Illuminating Clay: A Tangible Interface with Potential GRASS Applications.” In Proceedings of the Open Source GIS - GRASS Users Conference 2002. Trento, Italy.</a></p>
+<p style="font-size:0.75em"><a href="http://baharmon.github.io/publications/tangible_geospatial_modeling.pdf">L. Tateosian, H. Mitasova, B. A. Harmon, B. Fogleman, K. Weaver, and R. S. Harmon, “TanGeoMS: tangible geospatial modeling system.,” IEEE Trans. Vis. Comput. Graph., vol. 16, no. 6, pp. 1605–12, 2010.</a></p>
+<p style="font-size:0.75em">Image source: <a href="http://tangible.media.mit.edu/project/illuminating-clay/">MIT Media Lab</a></p>
+</section>
+
+<!-- Near real time interaction -->
+<section>
+<h2>Tanigble interaction with GIS</h2>
+<video  data-autoplay width="90%" style="margin-top: 1em" controls>
+<source src="img/tl_dam.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>With Tangible Landscape you can hold a GIS in your hands - feeling the shape of the earth, sculpting its topography, and directing the flow of water.</p>
+</section>
+
+<!-- How it works -->
+<section>
+<h2>How-it-works</h2>
+<img style="margin-top: 1em" height="500px" src="img/system_schema.png">
+<p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
+</section>
+
+<!-- Science with Tangible Landscape -->
+<section>
+<h2>Intuitive scientific modeling with Tangible Landscape</h2>
+<img width="25%" src="img/subsurface_1.jpg">
+<img width="25%" src="img/subsurface_2.jpg">
+<img width="40.55%" src="img/subsurface_3.jpg">
+<p>Tangible Landscape is designed to make scientific data, models, and simulations exploratory, engaging, and fun</p>
+</section>
+
+<!-- Visibility analysis -->
+<section>
+<h2>Applications</h2>
+<video  data-autoplay width="90%" style="margin-top: 1em" controls>
+<source src="img/visibility.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<h4 style="margin-top: 1em">Visibility analysis</h4>
+</section>
+
+<!-- Solar analysis-->
+<section>
+<h2>Applications</h2>
+<img width="30%" src="img/solar_1.jpg">
+<img width="30%" src="img/solar_2.jpg">
+<img width="30%" src="img/solar_3.jpg">
+<h4 style="margin-top: 1em">Solar analysis</h4>
+<p>Solar irradiation and cast shadow</p>
+</section>
+
+<!-- Trail Planning -->
+<section>
+<h2>Applications</h2>
+<img width="30%" src="img/trail_1.jpg">
+<img width="30%" src="img/trail_2.jpg">
+<img width="30%" src="img/trail_4.jpg">
+<!--<img width="24%" src="img/trail_5.jpg">-->
+<h4 style="margin-top: 1em">Trail planning</h4>
+<p>Optimized trail routing between waypoints based on energetics, topography, and cost maps with feedback including trail slopes and viewsheds</p>
+</section>
+
+<!-- Trail Planning
+<section>
+<h2>Applications</h2>
+<img width="30%" src="img/walking_route_landcover_s.png">
+<img width="30%" src="img/walking_route_sniper_s.png">
+<img width="30%" src="img/walking_route_view_sniper_s.png">
+<h4 style="margin-top: 1em">Trail planning</h4>
+<p>Draw routes with a laser pointer or digitze markers as waypoints or viewpoints.</p>
+</section>
+ -->
+
+<!-- Serious gaming with Tangible Landscape: Coastal -->
+<section>
+<h2>Serious gaming</h2>
+<img width="30%" src="img/tl_coastal_1s.png">
+<img width="30%" src="img/tl_coastal_2s.png">
+<!--<img width="22%" src="img/tl_coastal_3s.png">-->
+<img width="30%" src="img/tl_coastal_4s.png">
+<h4 style="margin-top: 1em">Coastal flooding game</h4>
+<p>Save houses from coastal flooding by building coastal defenses</p>
+<p style="font-size:0.75em">Structured problem solving with rules, challenging objectives, and scoring</p>
+</section>
+
+<!-- Serious gaming with Tangible Landscape: Termites -->
+<section>
+<h2>Serious gaming</h2>
+<img width="30%" src="img/termite_game_1.jpg">
+<img width="30%" src="img/termite_game_2.jpg">
+<img width="30%" src="img/termite_game_3.jpg">
+<h4 style="margin-top: 1em">Termite infestation game</h4>
+<p>Manage the spread of termites across a city by treating city blocks</p>
+<p style="font-size:0.75em">Using an epidemiological model in R</p>
+</section>
+
+<!-- Open source -->
+<section>
+<h2>Open source</h2>
+<img width="10%" src="img/Octocat.png">
+<h4 style="margin-top: 1em">Fork us on GitHub</h4>
+<!--<p><a href="https://github.com/baharmon/tangible_topography">Repository with experiment instructions, scripts, data, and results</a></p>-->
+<p><a href="https://github.com/tangible-landscape/grass-tangible-landscape">Tangible Landscape plugin for GRASS GIS</a></p>
+<p><a href="https://github.com/tangible-landscape/r.in.kinect">GRASS GIS module for importing data from Kinect v2</a></p>
+<p><a href="https://osf.io/w8nr6/">Tangible Landscape repository on Open Science Framework</a></p>
+</section>
+
+<!-- Open education -->
+<section>
+<h2>Open education</h2>
+<img height="150px" src="img/logo_black.png">
+<h4 style="margin-top: 1em">Open source software, open algorithms, open data, and open educational resources</h4>
+<p>
+Petras, V., Petrasova, A., Harmon, B., Meentemeyer, R.K., Mitasova, H.
+<a href="http://www.mdpi.com/2220-9964/4/2/942/pdf"><em>
+Integrating Free and Open Source Solutions into Geospatial Science Education</em></a>.
+ISPRS International Journal of Geo-Information. 2015, 4, 942-956.
+<a href="http://dx.doi.org/10.3390/ijgi4020942">doi:10.3390/ijgi4020942</a>
+</p>
+</section>
+
+<!-- Installation -->
+<section>
+<h2>Dependencies</h2>
+<table>
+<tr><th>Program</th><th>Use</th></tr>
+<tr><td>libfreenect2</td><td>Drivers for Kinect v2</td></tr>
+<tr><td>PCL</td><td>Point cloud processing</td></tr>
+<tr><td>GRASS GIS 7</td><td>Geospatial modeling and visualization</td></tr>
+</table>
+</section>
+
+<!-- Software -->
+<section>
+<h2>Software</h2>
+<table>
+<tr><th>Components</th><th>Type</th><th>Use</th></tr>
+<tr><td><a href="https://github.com/tangible-landscape/grass-tangible-landscape">grass-tangible-landscape</a></td><td>GRASS GIS plugin</td><td>Tangible interface for GRASS GIS</td></tr>
+<tr><td><a href="https://github.com/tangible-landscape/r.in.kinect">r.in.kinect</a></td><td>GRASS GIS addon</td><td>Import data from Kinect</td></tr>
+</table>
+</section>
+
+<!-- Equipment list and budget -->
+<section>
+<h2>Hardware</h2>
+<table>
+<tr><th>Type</th><th>Product</th><th>Cost</th></tr>
+<tr><td>Computer</td><td>System 76 Oryx Pro</td><td>$1500</td></tr>
+<tr><td>Projector</td><td>Optoma ML750 WXGA 700 DLP LED</td><td>$500</td></tr>
+<tr><td>3D sensor</td><td>Xbox One Kinect</td><td>$100</td></tr>
+<tr><td></td><td>Kinect Adapter for Windows</td><td>$50</td></tr>
+<tr><td>Stand</td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
+<tr><td></td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
+<tr><td></td><td>Avenger F800 3-Inch Baby Wall Plate</td><td>$10</td></tr>
+<tr><td></td><td>Avenger F800 3-Inch Baby Wall Plate</td><td>$10</td></tr>
+<tr><td>Peripherals</td><td>HDMI cable</td><td>$10</td></tr>
+<tr><td></td><td>Extension cord</td><td>$10</td></tr>
+<tr><td>Modeling media</td><td>Waba Fun Kinetic Sand 11 Lbs</td><td>$50</td></tr>
+</table>
+</section>
+
+<!-- System setup -->
+<section>
+<h2>System setup</h2>
+<img style="margin-top: 1em" height="500px" src="img/system_setup.png">
+</section>
+
+<!-- Fabrication -->
+<section data-background="img/cnc_renshape.jpg">
+<h1 class="shadow">Modeling making</h1>
+</section>
+
+<!-- Fabrication
+<section data-background="img/cnc_mdf.jpg">
+<h1 class="shadow">Modeling making</h1>
+</section>
+ -->
+
+<!-- Fabrication: data sources -->
+<section>
+<h2>Data sources</h2>
+<table>
+<tr><th>Data type</th><th>Data source</th></tr>
+<tr><td>Lidar</td><td><a href="http://coast.noaa.gov/inventory/">United States Interagency Elevation Inventory</a></td></tr>
+<tr><td></td><td><a href="http://earthexplorer.usgs.gov/">Earth Explorer</a></td></tr>
+<tr><td></td><td><a href="http://coast.noaa.gov/dataviewer/">Digital Coast</a></td></tr>
+<tr><td></td><td><a href="http://www.opentopography.org/">Open Topography</a></td></tr>
+<tr><td>Digital elevation models</td><td><a href="http://viewer.nationalmap.gov/viewer/">National Elevation Dataset</a></td></tr>
+<tr><td>Orthoimagery</td><td><a href="http://raster.nationalmap.gov/arcgis/services/Orthoimagery/USGS_EROS_Ortho_1Foot/ImageServer/WMSServer">USGS EROS Orthoimagery WMS</a></td></tr>
+</table>
+</section>
+
+<!-- Fabrication: hand sculpting -->
+<section data-background="img/hand_sculpting.jpg">
+<h2 class="shadow">Modeling making</h2>
+<h3 class="shadow">Hand sculpting</h3>
+</section>
+
+<!-- Fabrication: CNC -->
+<section data-background="img/cnc_router.jpg">
+<h2 class="shadow">Modeling making</h2>
+<h3 class="shadow">CNC milling</h3>
+</section>
+
+<!-- Fabrication: 3D printing -->
+<section data-background="img/tangible_landscape.jpg">
+<h2 class="shadow">Modeling making</h2>
+<h3 class="shadow">3D printing</h3>
+</section>
+
+<!-- Fabrication: casting -->
+<section>
+<h2>Modeling making</h2>
+<img width="30%" src="img/3d_print_1.jpg">
+<img width="30%" src="img/3d_print_2.jpg">
+<img width="30%" src="img/3d_print_3.jpg">
+<h3 style="margin-top: 1em">Casting polymeric sand</h3>
+</section>
+
+<!-- Fabrication: in-situ digital fabrication -->
+<section>
+<h2>In-situ digital fabrication</h2>
+<video  data-autoplay width="90%" style="margin-top: 1em" controls>
+<source src="img/cnc_sand.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>A 3-axis CNC milling machine to model a landscape in polymer-enriched sand using a plunge cut</p>
+</section>
+
+<!-- Fabrication: robotic fabrication -->
+<section>
+<h2>Future work</h2>
+<img style="margin-top: 1em" height="500px" src="img/system_schema_robot.png">
+<p>In-situ robotic fabrication for Tangible Landscape</p>
+</section>
+
+<!-- Fabrication: autonomous construction -->
+<section>
+<h2>Future work</h2>
+<img style="margin-top: 1em" width="100%" src="img/system_schema_land.png">
+<p>Real-time data and autonomous construction with Tangible Landscape</p>
+</section>
+
+<!-- Book -->
+<section>
+<h2>Further reading</h2>
+<img width="20%" src="img/tl_book_cover.png">
+<p>Read our <a href="http://www.springer.com/us/book/9783319257730">book</a> and give it a try</p>
+</section>
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+                
+                center: true,
+                
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                 width: 1060,
+                // height: 700,
+                
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+                chalkboard: { 
+        		// optionally load pre-recorded chalkboard drawing from file
+            		src: "chalkboard.json",
+            	},
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true },
+                    { src: 'plugin/chalkboard/chalkboard.js' }
+                ],
+                keyboard: {
+            	    67: function() { RevealChalkboard.toggleNotesCanvas() },	// toggle notes canvas when 'c' is pressed
+            	    66: function() { RevealChalkboard.toggleChalkboard() },	// toggle chalkboard when 'b' is pressed
+            	    46: function() { RevealChalkboard.clear() },	// clear chalkboard when 'DEL' is pressed
+            	     8: function() { RevealChalkboard.reset() },	// reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            	    68: function() { RevealChalkboard.download() },	// downlad recorded chalkboard drawing when 'd' is pressed
+            	},
+            });
+
+        </script>
+
+    </body>
+</html>
