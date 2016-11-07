@@ -12,5 +12,11 @@
     --meta-description="Slides for Tangible Landscape Webinar (GeoForAll, UCGIS, ASPRS)" \
     geoforall-webinar.html
 
+./build-slides.py --outdir=build \
+    --outfile=cbi-webinar.html \
+    --title="Tangible Landscape Webinar" \
+    --meta-description="Slides for Tangible Landscape Webinar for CBI" \
+    cbi-webinar.html
+
 # make this presentation primary for convenience
 cp build/geoforall-webinar.html build/index.html
