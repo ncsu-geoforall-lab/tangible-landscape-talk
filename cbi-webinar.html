@@ -156,7 +156,7 @@ and a new <b>PhD in Geospatial Analytics</b> planned for launch in Fall 2017
 
 
 <!-- Science with Tangible Landscape -->
-<section>
+<section data-background-image="img/background_interaction_hands.png">
 <h2>Applications: topographic analysis</h2>
 <table>
     <tr><td style="text-align:center">slope<br/><img width="70%" src="img/slope_after.jpg"></td>
@@ -167,7 +167,7 @@ and a new <b>PhD in Geospatial Analytics</b> planned for launch in Fall 2017
 
 
 <!-- Visibility analysis -->
-<section>
+<section data-background-image="img/background_interaction_hands_markers.png">
 <h2>Applications: visibility</h2>
 <video  data-autoplay class="stretch" controls>
 <source src="img/visibility.mp4" type="video/mp4">
@@ -178,7 +178,7 @@ Your browser does not support the video tag.
 
 
 <!-- Solar analysis-->
-<section>
+<section data-background-image="img/background_interaction_hands.png">
 <h2>Applications: solar analysis</h2>
 <img width="23%" src="img/solar_1.jpg">
 <!-- <img width="32%" src="img/solar_3.jpg"> -->
@@ -190,7 +190,7 @@ Your browser does not support the video tag.
 
 
 <!-- Trail Planning -->
-<section>
+<section data-background-image="img/background_interaction_hands_markers.png">
 <h2>Applications: trail planning</h2>
 <img width="32%" src="img/trail_1.jpg">
 <img width="32%" src="img/trail_2.jpg">
@@ -200,7 +200,7 @@ Your browser does not support the video tag.
 
 
 <!-- Soil moisture -->
-<section>
+<section data-background-image="img/background_interaction_hands_markers.png">
 <h2>Applications: 3D soil moisture exploration</h2>
 <img height="190px" src="img/subsurface_1.jpg">
 <img height="190px" src="img/subsurface_2.jpg">
@@ -210,32 +210,44 @@ Your browser does not support the video tag.
 
 
 <!-- Fire -->
-<section>
+<section data-background-image="img/background_interaction_hands.png">
 <h2>Applications: wildfire spread</h2>
 <iframe data-autoplay width="853" height="480" src="https://www.youtube.com/embed/EJc57GFJeZI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </section>
 
 
 <!-- SOD -->
-<section>
-<h2>Applications: sudden oak death management</h2>
+<section class="textimg">
+<h2>Applications: Sudden Oak Death management</h2>
+<div>
+<p> Using Tangible Landscape in participatory modeling:
+  <ul style="">
+    <li>participants together explore options
+    to slow down the spread of SOD in Sonoma
+  using tangible user interface</li>
+    <li>stochastic, spatially-explicit model (Meentemeyer et al. 2011) implemented in R</li>
+  </ul>
+</div>
+<img width=40% src="img/baseline_2014.gif">
+</section>
+<section data-background-image="img/background_interaction_markers.png">
+<h2>Applications: Sudden Oak Death management</h2>
 <iframe data-autoplay width="853" height="480" src="https://www.youtube.com/embed/dnOhOFHAkEU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 </section>
 
-
 <!-- Futures -->
-<section>
+<section data-background-image="img/background_interaction_sand_laser.png">
 <h2>Applications: urban growth</h2>
-<video  data-autoplay class="stretch" controls muted>
+<p>Simulation of urban growth scenarios with FUTURES model
+<video  data-autoplay height="400px" controls muted>
 <source src="video/futures.mp4" type="video/mp4">
 Your browser does not support the video tag.
 </video>
-<p>Simulation of urban growth scenarios with FUTURES model
 </section>
 
 
 <!-- Serious gaming with Tangible Landscape: Coastal -->
-<section>
+<section data-background-image="img/background_interaction_hands.png">
 <h2>Serious games: coastal flooding</h2>
 <img width="32%" src="img/tl_coastal_1s.png">
 <img width="32%" src="img/tl_coastal_2s.png">
@@ -247,7 +259,7 @@ Your browser does not support the video tag.
 
 
 <!-- Serious gaming with Tangible Landscape: Termites -->
-<section>
+<section data-background-image="img/background_interaction_markers.png">
 <h2>Serious games: Termite infestation</h2>
 <img width="45%" src="img/termite_game_2.jpg">
 <img width="45%" src="img/termite_game_3.jpg">
@@ -255,7 +267,14 @@ Your browser does not support the video tag.
 using a model of biological invasion in R</p>
 </section>
 
+<section>
+<h2>Using colored felt for land cover modification</h2>
 
+<p>In this example changing C-factor by adding grass (light green) and patches of tress (darker green)
+  results in reduced erosion
+<img width="900px" src="img/felt.png">
+
+</section>
 <!-- Setup -->
 <section>
     <h3>System setup</h3>
@@ -273,16 +292,13 @@ using a model of biological invasion in R</p>
 
 
 <section>
-<h2>Interfaces</h2>
-<ul style="font-size:80%; margin: 0 0 0 1em; ">
-    <li style="padding:.1em 0.8em;">TUI: no GIS expertise needed, users control the landscape shape</li>
-    <li style="padding:.1em 0.8em;">GUI: to operate Tangible Landscape and control scanning and displayed layers</li>
-    <li style="padding:.1em 0.8em;">API: using Python GRASS API to create GIS workflows, examples at
-        <a href="https://grasswiki.osgeo.org/wiki/Using_GRASS_GIS_through_Python_and_tangible_interfaces_(workshop_at_FOSS4G_NA_2016)">Workshop at FOSS4G NA 2016</a></li>
-</ul>
-<img class="stretch" src="img/TUI_GUI_CLI.png">
+    <h3>Interfaces</h3>
+<img class="stretch" src="img/TUI_GUI_CLI_horizontal.jpg">
+<p style="text-align:left">
+<span style="margin-left:180px;margin-right:250px">TUI</span>
+<span style="margin-right:300px">GUI</span>
+<span style="margin-left:100px">API</span>
 </section>
-
 
 <!-- Physical models -->
 
@@ -333,6 +349,11 @@ using a model of biological invasion in R</p>
     <h2>Current work</h2>
     <img class="stretch" src="img/blender.png">
     <p>Tangible Landscape + Immersive Virtual Reality
+</section>
+<section>
+  <h2>Immersive Tangible Geospatial Modeling</h2>
+<img class="stretch" src="img/acm.jpg">
+<p class="small"> at ACM SIGSPATIAL 2016</p>
 </section>
 
 <section>
