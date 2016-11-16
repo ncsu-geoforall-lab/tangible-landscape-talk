@@ -1,6 +1,87 @@
 Narrative for Tangible Landscape GeoForAll webinar
 ==================================================
 
+Organizations
+-------------
+
+Welcome to the first webinar in the open source geospatial serries offered collaborativelly
+by several geospatial organizations, namely
+
+GeoForAll - an Open Source Geospatial Foundation research, education and outreach initiative
+with over 100 geospatial laboratories at academic insitutions worldwide. OSGeo Foundation is a non profit 
+foundation supporting the development and use of open source geospatial software and open data.
+Also joining us are members of University consortium for geografic information science with
+over 60 member universities in the US.
+And as you have heard already - this webinar is also offered as a GeoByte sponsored by ASPRS
+and its partner organizations.
+
+NCSU CGA
+--------
+
+The webinar is presented from the CGA, by the members of NC State Geoforall laboratory.
+Our center is a university-wide hub for research and education in geospatial computing, 
+analytics and geovisualization - and you will see some examples of these efforts in our presentation.
+In terms of education, our center offers a professional master degree in geospatial information 
+science and technology, and we are getting ready for a new PhD in Geospatial Analytics 
+to start in Fall 2017.
+
+Presenters
+----------
+
+The seminar was prepared by the GeoForAll lab team - Helena Mitasova - thats me, a professor 
+in MEAS and assoc. director for geovisualization at the center, then you will hear from My 
+graduate students - vaclav explaining the 3D modelis and TL setups, Anna, the lead developer
+of TL will explain the software and will show you some cool applications, Paym from the college of 
+design will showcase some of the latest development with immersive virtual environment.
+You won't hear from Brendan - the creative lead for the TL project as he is in London at a conference,
+but you will see him on some slides and finally ...
+
+Motivation
+----------
+
+So why are we interested in Tangible interfaces? I am sure this photo shows a familiar setting -
+we often get together around a screen to solve a geospatial problem or use mouse or touch 
+to manipulate 3D data on 2D screen. Such manipulation of data often requires knowledge of a specific,
+often complex software, usually only single person can access the data 
+creating barriers to collaboration and creativity. 
+
+History
+-------
+
+Couple years ago, researchers at the MIT Media Lab tried to adddress this issue and developed
+first prototypes of environments that coupled 3D physical models with their analysis.
+The systems were Sandscape and Illuminating clay and they were limited by the 3D scanning and computating
+capabilities available at that time.
+
+We were fortunate to collaborate with the Illuminated Clay developers and thanks to the grant from Army Research Office
+we developed a similar system and linked it with GIS to support modeling and analysis 
+of real world landscapes based on GIS data. The system used laboratory lidar and it was very expensive,
+limiting its broader use.
+
+The breakthrough for this approach came with a new generation of low cost 3D sensors,
+specifically Kinect. Several systems were devloped using Kinect, the best known among them
+is probably the Augumented sandbox by Keckcaves developed at UC Davis.
+You might have seen this systems at museums or conferences where it often generates a lot of excitement.
+
+Tangible Landscape
+------------------
+
+We were able to take advatage of the fast and relatively accurate 3D scanning by Kinect
+and developed the first system with real-time coupling of a 3D physical model, with GIS.
+This video should give you a basic idea of the interaction - using a model of a real landscape,
+we can modify the topography and get instant feedback on how our changes impact water flow and ponding.
+
+How it works
+------------
+
+So how does the system work? In the previous slide you have seen the 3D model of a landscape.
+This model is continuously scanned by the kinect, the scanned data are imported into GRASS GIS,
+where a 3D digital elevation model is computed and a selected analysis or modeling is performed -
+in our case contours are derived and water flow and ponding is simulated. A composite image
+of the selected map layers is then projected over the model. In this way the system couples
+the digital and physical models in a continuous cycle of scanning, modeling and projection,
+providing the user continuous feedback. 
+
 3D models
 ---------
 
@@ -186,12 +267,44 @@ Polygon features delineated with lazer-pointer can be defined as patches of tree
 ### Trail Design 
 Tangible objects are also processed in the application. For instance here, wooden cubes represent checkpoints that denote a recreational trail. Grass GIS, simulates the optimal route using an algorithm that simulates the least cost walking path. But Vatslav want to complement the trail experience and adjusts it to   pass through the new forested patches. The trail line feature not only represent the trail but also processed in Blender as a walktrough simulation that can viewed on screen or in HMD. With this extension, we hope to explore how Tangible Landscape can further closen the disciplinary gaps where we can decision-makers, stakeholders, scientists and architects can perceive and understand landscape processes and implications of future scenarios. 
 
+For designers
+-------------
 
+So where do we use TL? there are many ways - we will show just few examples.
+TL can transform the way how designers work by providing creative, collaborative environment
+for landscape design with real time feedback on the design imapcts - indeed our College of design
+has used in some of their research and courses and is installing their own system.
 
+For education
+-------------
 
+We use TL in our GIS courses to explain surface analysis algorithms and for student projects,
+but the system is not restricted to college level education. We have brough it to events
+where kids can explore the landscapes and out middle school has started exploring it as well.
 
+For communities
+---------------
 
+We also have projects where we explore TL as a platform to support decision making and to
+communicate science to public and decision makers with different background.
+in accordance with the geoforall mission making the geospatial data and tools accessigble to all.
 
+For researchers and developers
+------------------------------
 
+And we found aout that TL allowed us to improve and extend many modeling and analysis
+tools and it is great for testing new algorithms and tools, as it allows us to generate various
+landscape configurations in a controlled environment to test how the algorithms behave and how robust they are.
+Here Vaclav used it to generate a seuquence of dune positions to develop visualization tool
+for gradients of landform migration.
 
+Open source
+-----------
 
+As we have mentioned, all tools are open source, managed in a public GitHub repository.
+We have also created a TL repository in OSF to manage the project.
+
+Resources
+---------
+
+Finally here are the resources which you can use to build, use, and further develop Tangible Landscape.
