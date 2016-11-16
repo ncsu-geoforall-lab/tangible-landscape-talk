@@ -168,3 +168,46 @@ Vatslav starts by sculpting the topography to create retention ponds to address 
 Polygon features delineated with lazer-pointer can be defined as patches of trees to populate predefined diversity and density of vegetation. In this demonstration, only one type of tree is used. However, the blender script can be adjusted to detect various types of plant species. Shading and textures can be included to add to the realism of the scene. 
 ### Trail Design 
 Tangible objects are also processed in the application. For instance here, wooden cubes represent checkpoints that denote a recreational trail. Grass GIS, simulates the optimal route using an algorithm that simulates the least cost walking path. But Vatslav want to complement the trail experience and adjusts it to   pass through the new forested patches. The trail line feature not only represent the trail but also processed in Blender as a walktrough simulation that can viewed on screen or in HMD. With this extension, we hope to explore how Tangible Landscape can further closen the disciplinary gaps where we can decision-makers, stakeholders, scientists and architects can perceive and understand landscape processes and implications of future scenarios. 
+
+
+For designers
+-------------
+
+So where do we use TL? there are many ways - we will show just few examples.
+TL can transform the way how designers work by providing creative, collaborative environment
+for landscape design with real time feedback on the design imapcts - indeed our College of design
+has used in some of their research and courses and is installing their own system.
+
+For education
+-------------
+
+We use TL in our GIS courses to explain surface analysis algorithms and for student projects,
+but the system is not restricted to college level education. We have brough it to events
+where kids can explore the landscapes and out middle school has started exploring it as well.
+
+For communities
+---------------
+
+We also have projects where we explore TL as a platform to support decision making and to
+communicate science to public and decision makers with different background.
+in accordance with the geoforall mission making the geospatial data and tools accessigble to all.
+
+For researchers and developers
+------------------------------
+
+And we found aout that TL allowed us to improve and extend many modeling and analysis
+tools and it is great for testing new algorithms and tools, as it allows us to generate various
+landscape configurations in a controlled environment to test how the algorithms behave and how robust they are.
+Here Vaclav used it to generate a seuquence of dune positions to develop visualization tool
+for gradients of landform migration.
+
+Open source
+-----------
+
+As we have mentioned, all tools are open source, managed in a public GitHub repository.
+We have also created a TL repository in OSF to manage the project.
+
+Resources
+---------
+
+Finally here are the resources which you can use to build, use, and further develop Tangible Landscape.
