@@ -1,5 +1,105 @@
-Narrative for GeoForAll webinar
-======================================================
+Narrative for Tangible Landscape GeoForAll webinar
+==================================================
+
+3D models
+---------
+
+The first question we usually get is how do you build the physical models.
+The basic way is building models from sand.
+We use polymeric sand or Kinetic sand which nicely sticks together but it doesn't dry out.
+You can use projector to project contours and elevation color to guide you as you are
+building the model.
+
+Diff
+----
+
+More advanced way which actually uses Tangible Landscape.
+In this case Tangible Landscape guides you by giving you automated feedback about the
+model.
+It is scanning the sand on the table, computing difference from the desired digital elevation
+model and projecting this difference on the table.
+All this happens continuously as you shape the model.
+And the blue color tells you where to add sand while the red means that you should remove
+sand.
+As the shape of the model improves, watch also the histogram integrated with the legend.
+At the beginning the histogram was pretty wild but you cat see that as the model gets closer
+to the desired shape, the differences are closer to zero and the distribution is a nice
+Gaussian curve.
+From our experience, it helps a lot to project also contours of the desired elevation model in
+addition to blue and red colors, so you know what you are actually building.
+Using this method you can build fairly precise model in a short time.
+And all you need to build model for Tangible Landscape is Tangible Landscape itself.
+
+3D printing
+-----------
+
+You can also use 3D printing to create models but that's relatively expensive and the model
+size is quite limited.
+Additionally, the models are often fragile.
+
+Router
+------
+
+A better option for large models, is CNC routing.
+From user point of view, routing works in a similar way as 3D printing ­ you need a dedicated
+software to convert your digital 3D model into instructions for the machine.
+However, instead of adding material, the router removes or carves out the material.
+Routing or carving can be done on wood, dense foam or MDF that's medium dense fiber
+board.
+The models are robust and can be large.
+The largest model we tried was one meter by one meter.
+
+Mold
+----
+
+The big issue with the printed and carved models is that they can't be modified.
+So, what we do is carving a mold which we use to form the sand.
+Using a form you can get very precise model in a short time and the model can be modified
+later on.
+
+In the future, we would like to create sand models automatically in our lab using a router or a
+robotic arm.
+
+Here you see one of our tests - a CNC router forming a sand model.
+
+Setups
+------
+
+At this point you are probably decided to build Tangible Landscape yourself, right?
+So, how do you do that?
+First, you need to decide on which setup will you use.
+You already know you need projector, scanner, physical model and a computer.
+Placement of projector and scanner on stands will determine how well the setup will work for
+your case.
+You have several options.
+One option is to hide the projector in the ceiling.
+This is good for a lab because you need just one small stand but it is not possible to move it.
+
+With a short-throw projector you need just two short stands but the image will be quite
+distorted.
+
+For smaller models, you can use a small pocket projector on a tall stand.
+
+There is of course a lot of variations.
+This one uses medium-sized projector mounted on a stand which is able to accommodate
+the scanner as well.
+This setup is very portable and works well for medium­sized models.
+And that's our favorite setup.
+For really large models, like this one which was one meter by one meter, we use a special
+projector which can be placed in the same place as the scanner close to the model.
+
+Hardware
+--------
+
+Here is a list of hardware you need and the good news is that it is not expensive.
+At the Tangible Landscape wiki we list all the necessary parts with suggestions for particular
+products.
+
+Right now I would just like to emphasize that we try keep the price as low as possible.
+And if you can replace one part by something cheaper, you can do it.
+Just let us know or edit the wiki, so that everybody can benefit.
+Hardware is relatively cheap but it gets even better: You don't need to purchase any
+software licenses because it is all open source but I will let Anna to tell you about that.
 
 Software
 --------
