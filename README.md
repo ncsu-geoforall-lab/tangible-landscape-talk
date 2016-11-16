@@ -1,6 +1,9 @@
 NCSU GeoForAll Lab Tangible Landscape talks
 ===========================================
 
+ * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/geoforall-webinar.html
+ * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/cbi-webinar.html
+
 Building and publishing pages for this repository
 -------------------------------------------------
 
@@ -17,7 +20,7 @@ To add new presentation, create new HTML file and edit `./build-slides.py`.
 To publish your changes, do:
 
     git add ...
-    git commit -am "new colors for the website"
+    git commit -am "new slides explaining the project"
     git push
     ./publish.sh
 
