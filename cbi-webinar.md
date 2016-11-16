@@ -1,6 +1,73 @@
 Narrative for Tangible Landscape CBI webinar
 ============================================
 
+NCSU CGA
+--------
+
+The webinar is presented from the CGA, by the members of NC State Geoforall laboratory.
+Our center is a university-wide hub for research and education in geospatial computing, 
+analytics and geovisualization - and you will see some examples of these efforts in our presentation.
+In terms of education, our center offers a professional master degree in geospatial information 
+science and technology, and we are getting ready for a new PhD in Geospatial Analytics 
+to start in Fall 2017.
+
+Presenters
+----------
+
+The seminar was prepared by the GeoForAll lab team - Helena Mitasova - thats me, a professor 
+in MEAS and assoc. director for geovisualization at the center, then you will hear from My 
+graduate students - vaclav explaining the 3D modelis and TL setups, Anna, the lead developer
+of TL will explain the software and will show you some cool applications, Paym from the college of 
+design will showcase some of the latest development with immersive virtual environment.
+You won't hear from Brendan - the creative lead for the TL project as he is in London at a conference,
+but you will see him on some slides and finally...
+
+Motivation
+----------
+
+So why are we interested in Tangible interfaces? I am sure this photo shows a familiar setting -
+we often get together around a screen to solve a geospatial problem or use mouse or touch 
+to manipulate 3D data on 2D screen. Such manipulation of data often requires knowledge of a specific,
+often complex software, usually only single person can access the data 
+creating barriers to collaboration and creativity. 
+
+History
+-------
+
+Couple years ago, researchers at the MIT Media Lab tried to adddress this issue and developed
+first prototypes of environments that coupled 3D physical models with their analysis.
+The systems were Sandscape and Illuminating clay and they were limited by the 3D scanning and computating
+capabilities available at that time.
+
+We were fortunate to collaborate with the Illuminated Clay developers and thanks to the grant from Army Research Office
+we developed a similar system and linked it with GIS to support modeling and analysis 
+of real world landscapes based on GIS data. The system used laboratory lidar and it was very expensive,
+limiting its broader use.
+
+The breakthrough for this approach came with a new generation of low cost 3D sensors,
+specifically Kinect. Several systems were devloped using Kinect, the best known among them
+is probably the Augumented sandbox by Keckcaves developed at UC Davis.
+You might have seen this systems at museums or conferences where it often generates a lot of excitement.
+
+Tangible Landscape
+------------------
+
+We were able to take advatage of the fast and relatively accurate 3D scanning by Kinect
+and developed the first system with real-time coupling of a 3D physical model, with GIS.
+This video should give you a basic idea of the interaction - using a model of a real landscape,
+we can modify the topography and get instant feedback on how our changes impact water flow and ponding.
+
+How it works
+------------
+
+So how does the system work? In the previous slide you have seen the 3D model of a landscape.
+This model is continuously scanned by the kinect, the scanned data are imported into GRASS GIS,
+where a 3D digital elevation model is computed and a selected analysis or modeling is performed -
+in our case contours are derived and water flow and ponding is simulated. A composite image
+of the selected map layers is then projected over the model. In this way the system couples
+the digital and physical models in a continuous cycle of scanning, modeling and projection,
+providing the user continuous feedback.
+
 Interactions
 ------------
 You have so far seen only sculpting sand with our hands, where we modify the continuous elevation surface. However some applications require different types of input data, such as objects. To make Tangible Landscape flexible in this regard, we developed multiple ways to interact with the physical models. Here we use a wooden marker to specify point locations on the landscape, for example view points or trailheads. Recently we have started to experiment with using laser pointer to draw objects, such as points, lines or polygons. Another option is to use colored sand to create polygons where the color represents certain attribute of the polygon and the height of the sand can represent intensity of that property. The most recent interaction we are testing now is creating areas using colored felt or paper of different shapes placed on the model. 
