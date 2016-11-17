@@ -154,8 +154,30 @@ There are three ways, three interfaces. First, the tangible user interface is wh
 The graphical user interface, GUI for short, launches the scanning and controls the scanning parameters which can be different depending on the model and setup. This is what an operator with some basic GIS knowledge would use to prepare Tangible Landscape for the others and to support them further as they are working with the tangible interface.
 The API, application programming interface, is what makes Tangible Landscape flexible, apart from the prepared functionality you have seen in the presentation, you can develop your own workflows using Python. This serves researches who are linking new models to Tangible Landscape and really anybody who wants to add some specific functionality with few lines of Python code.
 
-3D models here (Brendan Harmon)
----------------
+Building physical 3D models
+---------------------------
+So how do you build the physical model you need for Tangible Landscape?
+
+Hand sculpting from polymeric sand
+----------
+We typically build the models out of polymer enriched sand because it is very easy to sculpt, sticks together nicely, and doesn’t dry out. You can easily build a polymeric sand model by hand.  Project the contours and color map of the elevation you want to built onto the sand and use this as a guide for modeling. 
+
+Hand sculpting with difference feedback
+----------
+You can also build polymeric sand models by hand using Tangible Landscape for real-time feedback. As you build your model, it will be continuously scanned, and the difference between the landscape you want to build and the landscape you have built will be projected back onto the model. The blue color shows you where to add sand, while the red shows you need to remove sand. Note the histogram beside the legend. When you begin sculpting the model, the histogram will be pretty wild, but as you progress the differences should get smaller and the distribution should form a nice gaussian curve. It is also helpful to project the contours of the landscape  you want to build. With this method you can build a relatively precise model quickly - in less than ten minutes in this example. All you need is polymeric sand and Tangible Landscape. 
+
+3D printing
+----------
+With 3D printing you can digitally fabricate very precise models, but they will be relatively small and very expensive.
+
+CNC routing large, complex models and molds
+----------
+With Computer numerical control (CNC) routing you can digitally fabricate much larger models. While 3D printing is an additive process - built up layer by layer - CNC routing is a subtractive process - the material is cut away with a drill bit.  You can route or mill a wide range of materials. There are low cost materials such as  low density polystyrene foams and medium density fiberboard (MDF). There are more expensive materials that you can route in finer detail such as high density urethane foams. 
+
+Casting polymeric sand
+----------
+3D printed and CNC routed models are hard and rigid - you can not easily change them. Because we want to have malleable models for Tangible Landscape, we typically use 3D printed and CNC routed models as molds for casting polymeric sand. With a mold we can quickly cast a very precise, but malleable model with a complicated shape. The mold is also our “reset button.” When you want to restore you model to its original condition, just re-cast it!
+
 IVE development 
 ---------------
 ### Concept
