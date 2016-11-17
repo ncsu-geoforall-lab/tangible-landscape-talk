@@ -176,7 +176,7 @@ With Computer numerical control (CNC) routing you can digitally fabricate much l
 
 Casting polymeric sand
 ----------
-3D printed and CNC routed models are hard and rigid - you can not easily change them. Because we want to have malleable models for Tangible Landscape, we typically use 3D printed and CNC routed models as molds for casting polymeric sand. With a mold we can quickly cast a very precise, but malleable model with a complicated shape. The mold is also our “reset button.” When you want to restore you model to its original condition, just re-cast it!
+3D printed and CNC routed models are hard and rigid - you can not easily change them. Because we want to have malleable models for Tangible Landscape, we typically use 3D printed and CNC routed models as molds for casting polymeric sand. With a mold we can quickly cast a very precise, but malleable model with a complicated shape. The mold is also our “reset button.” When you want to restore your model to its original condition, just re-cast it!
 
 IVE development 
 ---------------
