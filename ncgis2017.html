@@ -320,19 +320,126 @@ Your browser does not support the video tag.
 </section>
 
 
+<!-- IVE COUPLING SLIDES "> -->
 
-<!-- Immersive Virtual Reality -->
+<!-- motivation for coupling -->
+
+<section> 
+<h2> Coupling Tangible Landscape with Immersive Virtual Environments (IVE) </h2>
+<ul>
+    <li> Better communicating the implications of landscape change </li>
+    <li> Including design attributes in landscape planning process </li>
+    <li> Assessing trade-offs between ecological and experiential quality (e.g., preferences, pyschological well-being) </li>
+</ul>
+<img class="stretch" src="img/flooding_secraf.jpg">
+</section> 
+
+<!-- IVE -->
+<section> 
+<h2> Immersive Virtual Environments (IVE) </h2>
+<ul>
+<li>Immersive Virtual Environements surround the user in images, video or other stimuli to generate a perception of being physically present in a non-physical world.</li> 
+<li> High degree of "presence", more robust asessement of human perception and preferences </li>
+
+</ul>
+<img class="stretch" src="img/IVE.jpg">
+<p style="font-size:0.5em"> http://marclee.io/en/10-000-moving-cities-same-but-different-vr/ </p>
+
+</section> 
+
+<!-- Coupling -->
 <section>
-    <h2>Current work</h2>
-    <img class="stretch" src="img/blender.png">
-    <p>Tangible Landscape + Immersive Virtual Reality
+<h2> The coupling rationale </h2>
+<ul>
+<li> Real-time updating a georeferenced 3D model of the landscape based on user interaction with Tangible Landscape </li>
+<li> Updating the attributes (shape, position) of 3D objects (e.g., plants) and surfaces (e.g., terrain) with their corresponding tangible objects  </li>
+<li> Enabling user to control the viewpoints (camera position) and animation (e.g., walkthrough, flythrough) </li>
+</ul>
 </section>
 
 <section>
-    <h2>Tangible Landscape + Immersive Virtual Reality</h2>
-    <iframe data-autoplay width="853" height="480"  src="https://www.youtube.com/embed/pYbpEMjME1Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<!-- physical setup -->
+<h2>Physical setup</h2>
+<img class="stretch" src="img/blender.png">
+
 </section>
 
+<!-- What is Blender ? Why Blender ? -->
+<section>
+
+<h2> What is Blender? Why Blender? </h2>
+<ul>
+    <li>Free and open source 3d modelling and game engine software </li>
+    <li>Easy scripting (Python) </li>
+    <li>GIS and Virtual reality plugin</li>
+    <li>High-quality real-time rendering and shading </li>
+</ul>
+<img class="stretch" src="img/blender_sample.jpg">
+<p style="font-size:0.5em"> agiro.cgsociety.org </p>
+</section>
+
+<!-- Software Architecture -->
+<section>
+<h2> Software Architecture </h2>
+<img class="stretch" src="img/blender_workflow-01.jpg">
+</section>
+
+<!-- Features -->
+<section class="textimg">
+    <div style="text-align:left">
+        <p> <b>Interaction:</b> hand </p>
+        <p> <b>3D processing:</b> terrain GeoTIFF raster and water polygon </p>
+        <p> <b>Simulation:</b> simple hydrologic model </p>
+    </div>
+<img src="img/feature1.jpg">
+</section>
+
+<!-- Features -->
+<section>
+
+<img class="stretch" src="img/feature2.jpg">
+<div style="text-align:left">
+<p> <b>Interaction:</b> laser pointer </p>
+<p> <b>3D processing:</b> importing line feature to update camera position </p>
+</div>
+</section>
+
+<!-- Vantage Points -->
+<section>
+<img class="stretch" src="img/features_6.jpg">
+<div style="text-align:left">
+<p> <b>Interaction:</b> laser pointer </p>
+<p> <b>3D processing:</b> importing polygon features to populate trees </p>
+</div>
+</section>
+
+<!-- Planting -->
+<section>
+<img class="stretch" src="img/features_7.jpg">
+<div style="text-align:left">
+<p> Experiencing the landscape through IVE </p>
+<p> <b>Interaction:</b> laser pointer </p>
+</div>
+
+</section>
+
+<!-- IVE -->
+<section>
+
+   <iframe data-autoplay class="stretch"  src="https://www.youtube.com/embed/pYbpEMjME1Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+</section>
+
+<!-- Video -->
+<section>
+<h2> Future work </h2>
+<ul>
+<li> Landscape planting design </li>
+<li> Habitat connectivity and landscape preferences in woodland patches </li>
+</ul>
+<img class="stretch"  src="img/system_schema_planting.jpg">
+
+</section>
 
 
 <!-- Open source -->
@@ -372,143 +479,6 @@ Your browser does not support the video tag.
 <!-- <img width="20%" src="img/tl_book_cover.png"> -->
 </section>
 
-<section>
-    <h2>Thank you!</h2>
--->
-<p>
-<iframe data-autoplay width="853" height="380" src="https://www.youtube.com/embed/Uje8ORyhBaQ?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Uje8ORyhBaQ" frameborder="0" allowfullscreen></iframe>
-</section>
-
-<!-- IVE COUPLING SLIDES "> -->
-
-<!-- motivation for coupling -->
-
-<section> 
-<h2> Coupling Tangible Landscape with Immersive Virtual Environments (IVE) </h2>
-<ul>
-    
-    <li> Better communicating the implications of landscape change </li>
-    <li> Including design attributes in landscape planning process </li>
-    <li> Assessing trade-offs between ecological and experiential quality (e.g, preferences, pyschological well-being) </li>
-</ul>
-<img width="90%" src="img/flooding_secraf.jpg">
-<p style="font-size:0.5em"> Reference </p>
-</section> 
-
-<!-- IVE -->
-<section> 
-<h2> Immersive Virtual Environments (IVE) </h2>
-<ul> 
-<li>Immersive Virtual Environements sorround the user in images, video or other stimuli to generate a perception of being physically present in a non-physical world.</li> 
-<li> High degree of "presence", more robust asessement of human perception and preferences </li>
-
-</ul>
-<img width="60%" src="img/IVE.jpg">
-<p style="font-size:0.5em"> http://marclee.io/en/10-000-moving-cities-same-but-different-vr/ </p>
-
-</section> 
-
-<!-- Coupling -->
-<section>
-<h2> The coupling rationale </h2>
-<ul>
-<li> Real-time updating a georeferenced 3D model of the landscape based on user interaction with Tangible Landscape </li>
-<li> Updating the attributes (shape, position) of 3D objects (eg., plants) and surfaces (e.g, terrain) with their corresponding tangible objects  </li>
-<li> Enabling user to control the viewpoints (camera position) and animation (e.g., walkthrough, flythrough) </li>
-
-</ul>
-
-</section>
-
-<section>
-<!-- physical setup -->
-<h2>Physical setup</h2>
-<img width="60%" src="img/blender.png">
-
-</section>
-
-<!-- What is Blender ? Why Blender ? -->
-<section>
-
-<h2> What is Blender ? Why Blender ? </h2>
-<ul>
-    <li>Free and open source 3d modelling and game engine software </li>
-    <li>Easy scripting (Python) </li>
-    <li>GIS and Virtual reality plugin</li>
-    <li>High-quality real-time rendering and shading </li>
-</ul>
-<img width="75%" src="img/blender_sample.jpg">
-<p style="font-size:0.5em"> agiro.cgsociety.org </p>
-</section>
-
-<!-- Software Architecture -->
-<section>
-<h2> Software Architecture </h2>
-<img width="90%" src="img/blender_workflow-01.jpg">
-
-</section>
-<!-- Features -->
-<section>
-
-
-<img class="stretch" src="img/feature1.jpg">
-<ul>
-<p> Interaction:hand </p>
-<p> 3D processing: Terrain geotiff raster and water polygon </p>
-<p> Simulation: simple hydrology model </p>
-</ul>
-</section>
-
-<!-- Features -->
-<section>
-
-<img width="80%" src="img/feature2.jpg">
-<ul>
-<p> Interaction: laser pointer </p>
-<p> 3D processing: Importing line feature to update camera position </p>
-</ul>
-</section>
-
-<!-- Vantage Points -->
-<section>
-
-<img width="80%" src="img/features_6.jpg">
-<ul>
-<p> Interaction: laser pointer </p>
-<p> 3D processing: Importing polygon features to populate trees </p>
-</ul>
-</section>
-
-<!-- Planting -->
-<section>
-
-<img width="80%" src="img/features_7.jpg">
-<ul>
-<p> Experiencing the landscape through IVE </p>
-<p> Interaction: laser pointer </p>
-</ul>
-
-</section>
-
-<!-- IVE -->
-<section>
-
-   <iframe data-autoplay width="853" height="480"  src="https://www.youtube.com/embed/pYbpEMjME1Y?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-</section>
-
-<!-- Video -->
-<section>
-<h2> Future work </h2>
-
-
-<ul>
-<li> Landscape planting design </li>
-<li> Habitat connectivity and landscape preferences in woodland patches </li>
-</ul>
-<img width="50%" src="img/system_schema_planting.jpg">
-
-</section>
 <!-- This is a generated file. Do not edit. -->
         </div>  <!-- slides -->
 
