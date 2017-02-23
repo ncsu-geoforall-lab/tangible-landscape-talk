@@ -96,8 +96,7 @@ Coastal
 Recently there has been a lot of excitement about serious games and how we can use them to engage public in science. We thought Tangible Landscape would be a great tool for serious gaming, so let’s look at a coastal flooding game. We prepared this game for a public event and people playing the game were trying to protect the homes on the coast when a foredune is breached during a storm surge. With limited sand budget they tried different ways of building barriers and they learned pretty quickly that a breach in one place can cause flooding of houses which are far away from the breach.
 
 
-
-IVE development 
+Coupling Tangible Landscape with IVE
 ---------------
 ### 1. Concept
 
