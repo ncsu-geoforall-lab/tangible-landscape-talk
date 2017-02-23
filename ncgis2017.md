@@ -172,7 +172,7 @@ Aslo, Polygon features delineated with laser-pointer can be defined as patches o
 Tangible objects are also processed in the application. For instance here, wooden cubes represent checkpoints that denote a recreational trail. Grass GIS, simulates the optimal route using an algorithm that simulates the least cost walking path. But Vatslav want to complement the trail experience and adjusts it to meander within the new forested patches.
 
 The trail line feature not only represent the trail but also processed in Blender as a walktrough simulation that can viewed on screen or in HMD. 
-#### 12. Future work
+### 12. Future work
 
 The video you saw was our first prototype of the application, we now have considerably improved the realism and rendering quality and working to improve it even further. We are intending to test it in landscape design and decision making scenarios, where users can plant a variety of vegetation,design surfaces, and decide on both ecological relevance (like erosion, waterflow) and aesthetic aspects of their design in real time. 
 
