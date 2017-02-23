@@ -167,6 +167,11 @@
 
 <img height="80px" style="margin-top: 2em" src="img/cgaBlack.png">
 <h5 style="color: #000"> North Carolina State University</h5>
+
+ <aside class="notes">
+    Good afternoon, my name is Anna and together with Payam we will talk today
+    about Immersive Tangible Landscape,
+ </aside>
 </section>
 
 
@@ -181,6 +186,15 @@ geospatial computing, modeling, analytics and geovisualization.
 <p style="margin-top: 1em;">
 <p style="font-size: 140%; margin-top: 1em;">
 <a href="http://geospatial.ncsu.edu/">geospatial.ncsu.edu</a>
+
+<aside class="notes">
+   which is a project we developed as members of GeoForAll laboratory
+   to make landscape design process more effective through the use of Tangible
+   interaction, Immersive virtual environments, and geospatial analytics.
+   Our lab is part of the Center for Geospatial Analytics, which focuses
+   on educationa nd interdisciplinary research, and has been instrumental in
+   making this research happen.
+</aside>
 </section>
 
 <section>
@@ -188,6 +202,13 @@ geospatial computing, modeling, analytics and geovisualization.
 <div style="margin-left:7%;float:left;max-width:45% !important">
 Tangible Landscape</div>
 <div style="margin-right:5%;float:right;max-width:45% !important"> Immersive Virtual Environment (IVE)</div>
+
+<aside class="notes">
+    In the first part of this talk, I will give you an overview of Tangible Landscape,
+    a tangible interface for GIS, which we have been developing and applying for couple years now, 
+    and Payam will then show you the newest coupling of TL with Immersive virtual environments,
+    and explain how this coupling enhances our current design approaches.
+</aside>
 </section>
                 
                 
@@ -199,7 +220,14 @@ Tangible Landscape</div>
     <li>Manipulating computer models is not intuitive and requires specialized software and training.</li>
     <li>Collaboration is restricted as typically only one user at a time can navigate and modify models. </li>
 
-
+<aside class="notes">
+    So why are we interested in Tangible interfaces?
+    I am sure this photo shows a familiar setting -
+we often get together around a screen to solve a geospatial problem or use mouse or touch 
+to manipulate 3D data on 2D screen. Such manipulation of data often requires knowledge of a specific,
+often complex software, usually only single person can access the data 
+creating barriers to collaboration and creativity. 
+</aside>
 </ul>
 
 <img height="250px" src="img/collaboration_computer.JPG">
@@ -217,6 +245,16 @@ Tangible Landscape</div>
 <p><b>Tangible Geospatial Modeling System (TanGeoMS)</b></p>
 <p><small>L. Tateosian, H. Mitasova, B. A. Harmon, B. Fogleman, K. Weaver, and R. S. Harmon, <a href="http://baharmon.github.io/publications/tangible_geospatial_modeling.pdf">“TanGeoMS: tangible geospatial modeling system.,”</a>
      IEEE Trans. Vis. Comput. Graph., vol. 16, no. 6, pp. 1605–12, 2010.</small></p>
+     
+<aside class="notes">
+    More than 10 years ago, researchers at the MIT Media Lab tried
+     to adddress this issue and developed early prototypes
+of environments that coupled 3D physical models with analysis.
+My advisor Dr. Helena Mitasova developed a similar system, but linked to GIS
+ to support modeling and analysis 
+of real world landscapes based on GIS data. The system used laboratory lidar and it was very expensive,
+limiting its broader use.
+</aside>
 </section>
 
 <section>
@@ -227,6 +265,14 @@ Tangible Landscape</div>
 <p><small>Image source:
      <a href="http://idav.ucdavis.edu/~okreylos/ResDev/SARndbox/">http://idav.ucdavis.edu/</a></small></p>
 
+<aside class="notes">
+    The breakthrough for this approach came with a new generation of low cost 3D sensors,
+    specifically Kinect. Several systems were developed using Kinect,
+     the best known among them
+    is probably the Augumented sandbox by Keckcaves developed at UC Davis.
+    You might have seen this systems at museums or conferences where it often generates a lot of excitement.
+
+</aside>
 </section>
 
 <!-- Near real time interaction -->
@@ -234,6 +280,13 @@ Tangible Landscape</div>
 <h2>Tangible Landscape: real-time coupling with GIS</h2>
 <iframe data-autoplay width="853" height="480" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0&amp;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
 <p>With Tangible Landscape you can hold a GIS in your hands - feeling the shape of the earth, sculpting its topography, and directing the flow of water.</p>
+
+<aside class="notes">
+    We were able to take advatage of the fast and relatively accurate 3D scanning by Kinect
+and developed the first system with real-time coupling of a 3D physical model, with GIS.
+This video should give you a basic idea of the interaction - using a model of a real landscape,
+we can modify the topography and get instant feedback on how our changes impact water flow and ponding.
+</aside>
 </section>
 
 <!-- How it works -->
@@ -241,12 +294,27 @@ Tangible Landscape</div>
 <h2>How it works</h2>
 <img class="stretch" src="img/system_schema.png">
 <p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
+<aside class="notes">
+    So how does the system work? In the previous slide you have seen the 3D model of a landscape.
+This model is continuously scanned by the kinect, the scanned data are imported into GRASS GIS,
+where a 3D digital elevation model is computed and a selected analysis or modeling is performed -
+in our case contours are derived and water flow and ponding is simulated. A composite image
+of the selected map layers is then projected over the model. In this way the system couples
+the digital and physical models in a continuous cycle of scanning, modeling and projection,
+providing the user continuous feedback.
+</aside>
 </section>
 
 <!-- Software -->
 <section>
 <h2>Software</h2>
 <img class="stretch" src="img/software-schema.png">
+<aside class="notes">
+    So let’s have a look at the software behind Tangible Landscape. Tangible Landscape is built around GRASS GIS platform. GRASS GIS is an open source, multiplatform GIS offering a variety of simple to complex tools for geospatial analysis, but also remote sensing, network analysis or hydrology.
+Tangible Landscape has 3 main components. First we have a GRASS GIS add-on module r.in.kinect, which continuously receives point cloud from Kinect and processes this data into a digital elevation model.
+Then we have Tangible Landscape plugin integrated into GRASS GIS graphical user interface which serves for controlling Tangible Landscape, specifically the scanning parameters and timing.
+The third component is a Python file with geospatial analyses organized in functions called for each new scan. We developed a library of functions you can use right away, but you can also develop your own geospatial workflows using GRASS GIS Python API.
+</aside>
 </section>
 
 <!-- Equipment list and budget -->
@@ -289,6 +357,10 @@ Tangible Landscape</div>
             <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;" >areas
         </tr>
 </table>
+<aside class="notes">
+You have so far seen only sculpting sand with our hands, where we modify the continuous elevation surface. However some applications require different types of input data, such as objects. To make Tangible Landscape flexible in this regard, we developed multiple ways to interact with the physical models. Here we use a wooden marker to specify point locations on the landscape, for example view points or trailheads. Recently we have started to experiment with using laser pointer to draw objects, such as points, lines or polygons. Another option is to use colored sand to create polygons where the color represents certain attribute of the polygon and the height of the sand can represent intensity of that property. The most recent interaction we are testing now is creating areas using colored felt or paper of different shapes placed on the model. 
+These interactions can be combined to achieve intuitive interactions for particular application. Now I will show you some of the applications we developed for different study sites, using different geospatial models and each of them has different type of interaction.
+</aside>
 </section>
 
 
@@ -303,6 +375,9 @@ Tangible Landscape</div>
 Your browser does not support the video tag.
 </video>
 <p>Visibility analysis
+    <aside class="notes">
+        Topography is directly linked to visibility, so here we explore viewsheds at our campus. The physical model from sand represents digital surface model with canopy and we place the markers to specify viewpoints. Once the marker is detected, the viewshed is dynamically computed and visualized, here the visible areas are represented by yellow color.
+    </aside>
 </section>
 
 <!-- Futures -->
@@ -313,6 +388,10 @@ Your browser does not support the video tag.
 Your browser does not support the video tag.
 </video>
 <p>Simulation of urban growth scenarios with FUTURES model
+    <aside class="notes">
+        Here we switch from disease spread to urbanization application. We coupled TL with urban growth model called FUTURES implemented as a GRASS add-on and developed here at North Carolina State University. By placing colored sand we create red zones which attract new development or green zones for conservation. The height of the sand can represent the intensity - how much the zone attracts the development. Then we identify the polygons and rerun the urban growth model with these new conditions. 
+Now you can observe the animated growth of the city as predicted by the FUTURES based on the specified interventions.
+    </aside>
 </section>
 
 
@@ -325,6 +404,9 @@ Your browser does not support the video tag.
 <img width="32%" src="img/tl_coastal_4s.png">
 <p>Save houses from coastal flooding by building coastal defenses</p>
 <p style="font-size:0.75em">Structured problem-solving with rules, challenging objectives, and scoring</p>
+<aside class="notes">
+    Recently there has been a lot of excitement about serious games and how we can use them to engage public in science. We thought Tangible Landscape would be a great tool for serious gaming, so let’s look at a coastal flooding game. We prepared this game for a public event and people playing the game were trying to protect the homes on the coast when a foredune is breached during a storm surge. With limited sand budget they tried different ways of building barriers and they learned pretty quickly that a breach in one place can cause flooding of houses which are far away from the breach.
+</aside>
 </section>
 
 
