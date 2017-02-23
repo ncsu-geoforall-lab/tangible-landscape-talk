@@ -96,19 +96,86 @@ Coastal
 Recently there has been a lot of excitement about serious games and how we can use them to engage public in science. We thought Tangible Landscape would be a great tool for serious gaming, so let’s look at a coastal flooding game. We prepared this game for a public event and people playing the game were trying to protect the homes on the coast when a foredune is breached during a storm surge. With limited sand budget they tried different ways of building barriers and they learned pretty quickly that a breach in one place can cause flooding of houses which are far away from the breach.
 
 
-
-IVE development 
+Coupling Tangible Landscape with IVE
 ---------------
-### Concept
-As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective. We coupled Tangible Landscape with an immersive virtual environment so that human-scale views can be rendered on devices like head-mounted displays (HMD). This allowed us to integrate the ecological analysis with human-perception measures such as aesthetic evaluation and landscape preferences.
-### Hardware Setup 
-You just need to add two components to the Tangible Landscape setup : a 3D modeling and simulation software, and an immersive virtual reality headset.For 3D modeling  we use Blender, a free and open source program for modeling, rendering, simulation, animation, and game design. Blender has an internal python-based IDE and add-ons for importing GIS data. Also, it has add-ons for integrating immersive virtual environments such as HMDs.Briefly describing the automation process, GRASS GIS and Blender are loosely coupled through file-based communication. As user manipulates the tangible model, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system directory. Blender constantly monitors the directory to update 3d model of the landscape . In this way, user can simultaneously interact with large-scale tangible model and its 3d-clone that represent human-scale fine-grained elements , such as trees, waterbodies, roads, buildings and etc. For demonstration of how the extension works we prepared a small video where Vatslav and Anna collaboratively design a landscape. Through design process, please note that how the application affords the interplay between ecological assessment and aesthetic evaluation. 
-### Ponding and Landscape design
-Vatslav starts by sculpting the topography to create retention ponds to address stormwater management requirements of the site .  As as he carves the landscape, Water flow and accumulation simulations are continuously projected onto the physical model. In the same time, point-cloud and water polygon is transferred to update the  tangible model. Then he collaboratively works with anna to place the excavated soil on-site to create artificial mounds that provide overviews to the site.  For showing human-scale views took benefit of laser pointer interaction. You delineate the desired view-point and orientation in the landscape which is processed as a line feature as sent to blender to update the camera location and orientation.  Users can explore the landscape with the mouse or with the immersive headset.
-### Vegetation design.
-Polygon features delineated with lazer-pointer can be defined as patches of trees to populate predefined diversity and density of vegetation. In this demonstration, only one type of tree is used. However, the blender script can be adjusted to detect various types of plant species. Shading and textures can be included to add to the realism of the scene. 
-### Trail Design 
-Tangible objects are also processed in the application. For instance here, wooden cubes represent checkpoints that denote a recreational trail. Grass GIS, simulates the optimal route using an algorithm that simulates the least cost walking path. But Vatslav want to complement the trail experience and adjusts it to   pass through the new forested patches. The trail line feature not only represent the trail but also processed in Blender as a walktrough simulation that can viewed on screen or in HMD. With this extension, we hope to explore how Tangible Landscape can further closen the disciplinary gaps where we can decision-makers, stakeholders, scientists and architects can perceive and understand landscape processes and implications of future scenarios. 
+### 1. Concept
+
+As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective. We aimed to complete the picture by representing the landscape similar to how we perceive in human-scale. 
+
+So why it is important to include human perception ? 
+
+First, this allows for a more tangible understanding and communicating the implications of landscape change that are important components in decision making and stake-holder participation.  What it means if some areas is flooded ? or how your living environment looks like after some restoration intervention ? 
+
+Second, it allows bringing designers into the table and include attributes that they care about, like composition of landscape, coherence and etc. 
+
+Third, given our growing understanding about the impact of landscapes on individual’s mental and physical health , it is is imperative to find those sweet spots where the ecological functioning and human-perception measures such as aesthetic evaluation and landscape preferences are balanced. 
+
+### 2. What is IVE and why IVE? 
+
+IVE’s surround user with continous stream of stimuli, tied to the users head or body movement , creating a feeling being physically present in a virtual world. 
+
+They are shown to elicit a high degree of presence and immersion, and very robust tools for assessing perceptions. 
+
+### 3. The coupling rationale 
+
+The coupling concept is based on adaptive 3d modelling framework. The idea was to generate a georeferenced 3D world of the under-study landscape, in which all the features and behavior of 3D elements like trees, buildings and surfaces are linked to their corresponding tangible object in tangible landscape. In this way, as users manipulate the tangible model and pieces, they can see, in real time, the changing landscape rendered on display or through virtual reality headsets like oculus. 
+
+In addition to the automation adaptation aspect, we wanted to allow users to control the camera and animation so they can step into and navigate in their desired location in the landscape. 
+
+
+### 4. The physical setup 
+
+For implementing the concept, we added a 3D modeling and game engine software, called blender,  to the tangible landscape setup with outputs to a display and an immersive virtual reality headset.
+
+### 5. Blender 
+
+Blender is a free and open source program for modeling, rendering, simulation, animation, and game design. The software has an internal python-based IDE and add-ons for importing GIS data to georeference the scene, and displaying the viewport in HMDs. It also allows realtime high-quality rendering and shading. 
+
+### 6. Software architecture
+
+Briefly describing the workflow, GRASS GIS and Blender are loosely coupled through file-based communication. As user interacts with the tangible model or objects, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system directory. 
+
+We implemented a monitoring module in blender scripting environment that constantly watches the directory, identifies the type of incoming information, and apply relevant operations needed to update the 3d model. The input data can range from geospatial features like a raster or a point cloud, simple coordinates as a text file, or signals that prompt a command such as removing an object from the scene. 
+
+### 7. Hand interaction 
+For example, when landscape is manipulated with hand a geotiff raster and a polygon related to water is processed.
+ 
+### 8. Vantage point.
+
+While anytime during the interaction user can freely navigate in the environment using the mouse, they can also use a laser pointer to delineate their prefered vantage point. 
+Lines created with laser pointer can be transferred as a line feature denoting user’s desired viewpoint and direction of view. The scene camera is then relocated to the line’s starting point and the direction of view is aligned to the line’s endpoint. 
+
+### 9. Tree
+Aslo, Polygon features drwan with laser-pointer can be defined as patches of trees to populate predefined diversity and density of vegetation. 
+
+### 10. Views and oculus
+The viewport is continuously displayed in both viewport and headmounted display, so users can pick up the headset and get immersed in their prefered views.
+
+### 11. Video
+
+For demonstration of the application in action, we will go through a small video of our first prototype where our colleague, Vatslav, and Anna collaboratively design a landscape. Through the design process, please note that how the developments enables the dialogue between ecological assessment and aesthetic evaluation. 
+
+#### Ponding and Landscape design
+
+Vatslav starts by sculpting the topography to create retention ponds to address stormwater management requirements of the site .  As as he carves the landscape, Water flow and accumulation simulations are continuously projected onto the physical model. In the same time, point-cloud and water polygon is transferred to update the tangible model. 
+
+Then he collaboratively works with anna to place the excavated soil on-site to create artificial mounds that provide overviews to the site.  
+
+For showing human-scale views we took benefit of the laser pointer interaction. You can delineate the desired view-point and orientation in the landscape which is processed as a line feature as sent to blender to update the camera location and orientation.  Additionally, Users can explore the landscape with the mouse or with the immersive headset.
+
+#### Vegetation design.
+
+Aslo, Polygon features delineated with laser-pointer can be defined as patches of trees to populate predefined diversity and density of vegetation. In this demonstration, only one type of tree is used. However, the blender script can be adjusted to detect various types of plant species. In our current current revisions we have added shading and textures  improve the realism of the scene. 
+
+#### Trail Design 
+
+Tangible objects are also processed in the application. For instance here, wooden cubes represent checkpoints that denote a recreational trail. Grass GIS, simulates the optimal route using an algorithm that simulates the least cost walking path. But Vatslav want to complement the trail experience and adjusts it to meander within the new forested patches.
+
+The trail line feature not only represent the trail but also processed in Blender as a walktrough simulation that can viewed on screen or in HMD. 
+### 12. Future work
+
+The video you saw was our first prototype of the application, we now have considerably improved the realism and rendering quality and working to improve it even further. We are intending to test it in landscape design and decision making scenarios, where users can plant a variety of vegetation,design surfaces, and decide on both ecological relevance (like erosion, waterflow) and aesthetic aspects of their design in real time. 
+
 
 
 For designers
