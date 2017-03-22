@@ -3,6 +3,7 @@ NCSU GeoForAll Lab Tangible Landscape talks
 
  * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/geoforall-webinar.html
  * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/cbi-webinar.html
+ * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ncgis2017.html
 
 Building and publishing pages for this repository
 -------------------------------------------------
