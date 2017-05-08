@@ -18,6 +18,12 @@
     --meta-description="Slides for Tangible Landscape Webinar for CBI" \
     cbi-webinar.html
 
+./build-slides.py --outdir=build \
+    --outfile=ncaug-symposium.html \
+    --title="Tangible Landscape Webinar" \
+    --meta-description="Slides for Tangible Landscape Webinar for NCAUG" \
+    ncaug-symposium.html
+
 cp ncgis2017.html ./build/
 
 # make this presentation primary for convenience
