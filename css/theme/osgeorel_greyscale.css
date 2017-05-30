@@ -324,6 +324,12 @@ h3.shadow {
   margin: 0.5em 0;
   line-height: 1.2em; }
 
+.reveal p2 {
+  margin: 0.5em 0;
+  line-height: 1.3em;
+  font-size: .8em }
+
+
 /* Ensure certain elements are never larger than the slide itself */
 .reveal img, .reveal video, .reveal iframe {
   max-width: 95%;
@@ -342,7 +348,7 @@ h3.shadow {
 
 .reveal li {
   padding: .3em 0.8em; }
-    
+
 .reveal ol {
   list-style-type: decimal; }
 
