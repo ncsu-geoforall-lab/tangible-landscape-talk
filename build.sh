@@ -25,7 +25,7 @@
     ncaug-symposium.html
 
 cp ncgis2017.html ./build/
-cp EDRA2017.html ./build/
+cp EDRA_2017.html ./build/
 
 # make this presentation primary for convenience
 cp build/geoforall-webinar.html build/index.html
