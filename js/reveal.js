@@ -613,6 +613,7 @@
 		document.body.classList.add( 'print-pdf' );
 		document.body.style.width = pageWidth + 'px';
 		document.body.style.height = pageHeight + 'px';
+		layoutSlideContents(slideWidth, slideHeight);
 
 		// Add each slide's index as attributes on itself, we need these
 		// indices to generate slide numbers below
