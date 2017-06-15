@@ -26,6 +26,7 @@
 
 cp ncgis2017.html ./build/
 cp EDRA_2017.html ./build/
+cp worldbank2017.html ./build/
 
 # make this presentation primary for convenience
 cp build/geoforall-webinar.html build/index.html
