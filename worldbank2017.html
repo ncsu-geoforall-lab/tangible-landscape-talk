@@ -46,6 +46,14 @@
           background-repeat: no-repeat;
           background-position: left bottom;*/
         }
+        /* customization */
+        .reveal a {
+          color: #728FCE; /* #728FCE  #737CA1 */
+          text-decoration: none;
+          -webkit-transition: color 0.15s ease;
+          -moz-transition: color 0.15s ease;
+          transition: color 0.15s ease; }
+        /* */
         .reveal section img {
             background: transparent;
             border: 0;
@@ -159,49 +167,312 @@
 
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
+
 <section>
-<h5 style="color: #888">
-    Watershed Days 2017</h5>
+<h5 style="color: #888">Watershed Days 2017</h5>
 <h1 style="margin-top: 0.5em; margin-bottom: 0em; color: #000">Tangibly Smart</h1>
 <h2 style="margin-top: 0.1em; margin-bottom: 0em; color: #000">An interactive watershed in your hands</h2>
+<h5 style="margin-top: 0.9em;color: #888">Brendan Harmon, Anna Petrasova, Payam Tabrizian, Vaclav Petras, &amp; Helena Mitasova</h5>
+<img height="50px" style="margin-top: 1em" src="img/ncstate-type-4x1-blk-max.png">
+<p></p>
+<img height="80px" style="margin-top: -0.75em" src="img/cgaBlack.png">
+<aside class="notes">
+</aside>
+</section>
 
-<h5 style="margin-top: 0.9em;color: #888">Brendan Harmon, Anna Petrasova, Payam Tabrizian, Vaclav Petras, Helena Mitasova</h5>
+<!--
+<aside class="notes">
+  The talk is presented by the GeoForAll Laboratory at the
+  Center for Geospatial Analytics (CGA), North Carolina State University
+  CGA is an interdisciplinary research and education center with focus on
+  geospatial computing, modeling, analytics and geovisualization.
+  which is a project we developed as members of GeoForAll laboratory
+  to make landscape design process more effective through the use of Tangible
+  interaction, Immersive virtual environments, and geospatial analytics.
+  Our lab is part of the Center for Geospatial Analytics, which focuses
+  on educationa nd interdisciplinary research, and has been instrumental in
+  making this research happen.
+</aside>
+-->
 
-<img height="80px" style="margin-top: 2em" src="img/cgaBlack.png">
-<h5 style="color: #000"> North Carolina State University</h5>
+<!-- Tangible Landscape -->
+<section data-background="img/tangible_landscape.jpg">
+<h1 class="shadow">Tangible Landscape</h1>
+<h3 class="shadow">A tangible user interface powered by open source GIS.</h3>
+<img height="200px" src="img/grass_logo_black_outlined.png">
+</section>
 
- <aside class="notes">
+<!-- Demo -->
+<section>
+<h2>Tanigble interaction with GIS</h2>
+<video  data-autoplay class="stretch" style="margin-top: 1em" controls>
+<source src="video/tl_flow.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>With Tangible Landscape you can hold a
+watershed <!-- GIS -->
+in your hands -
+feeling the shape of the earth,
+sculpting its topography,
+and directing the flow of water.</p>
+</section>
 
- </aside>
+<!-- Motivation -->
+<section>
+<h2>Why tangible?</h2>
+<ul>
+  <li>Using your body is natural.</li>
+  <li>Using a mouse and keyboard is not natural.</li>
+  <li>Collaborating with a mouse and keyboard is really hard.</li>
+  <li>Interacting with scientific models is even harder.</li>
+</ul>
+</section>
+
+<!-- How-it-works -->
+<section>
+<h2>How it works</h2>
+<img class="stretch" src="img/rendered_diagram_1.png">
+<p>Tangible Landscape couples a digital and a physical model
+through a continuous cycle of 3D scanning,
+geospatial computation, and projection.</p>
+</section>
+
+<!-- Scanning -->
+<section>
+<h2>Realtime 3D scanning</h2>
+<img class="stretch" src="img/fusion.jpg">
+<p>with a Kinect sensor.</p>
+</section>
+
+<!-- Interactions -->
+<section>
+<h2>Interactions</h2>
+<img class="stretch" src="img/interaction_schema.jpg">
+<table width="100%">
+        <col width="20%">
+        <col width="20%">
+        <col width="20%">
+        <col width="20%">
+        <col width="20%">
+        <tr>
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">sculpting
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">excavation
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">patches
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">points
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">directions
+        </tr>
+</table>
+</section>
+
+<!-- GRASS GIS for watershed analysis
+<section>
+<h2><a href="https://grasswiki.osgeo.org/wiki/Hydrological_Sciences">Watershed analysis</a> in</h2>
+<img style="margin-top: -0.2em" height="125px" src="img/logo_black.png">
+<p></p>
+<ul style="font-size:0.8em">
+<li><a href="https://grass.osgeo.org/grass72/manuals/r.watershed.html">r.watershed</a></li>
+<li><a href="https://grasswiki.osgeo.org/wiki/R.stream.*_modules">r.stream*</a></li>
+<li><a href="https://grass.osgeo.org/grass72/manuals/r.sim.water.html">r.sim.water</a></li>
+<li><a href="https://grass.osgeo.org/grass72/manuals/r.sim.sediment.html">r.sim.sediment</a></li>
+<li><a href="https://grass.osgeo.org/grass72/manuals/r.lake.html">r.lake</a></li>
+<li><a href="https://grass.osgeo.org/grass72/manuals/addons/r.hydrodem.html">r.hydrodem</a></li>
+<li>etc...</li>
+</ul>
+</section>
+-->
+
+<section>
+<h2><a href="https://grasswiki.osgeo.org/wiki/Hydrological_Sciences">Watershed analysis</a> in</h2>
+<img style="margin-top: -0.2em" height="125px" src="img/logo_black.png">
+<p></p>
+<table>
+  <tr>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.watershed.html">r.watershed</a></td>
+    <td><a href="https://grasswiki.osgeo.org/wiki/R.stream.*_modules">r.stream*</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.sim.water.html">r.sim.water</a></td>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.sim.sediment.html">r.sim.sediment</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.lake.html">r.lake</a></td>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/addons/r.hydrodem.html">r.hydrodem</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r3.gwflow.html">r3.gwflow</a></td>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.fill.dir.html">r.fill.dir</a></td>
+  </tr>
+  <tr>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.carve.html">r.carve</a></td>
+    <td><a href="https://grass.osgeo.org/grass72/manuals/r.drain.html">r.drain</a></td>
+  </tr>
+  <tr>
+    <td style="border: none"><a href="https://grass.osgeo.org/grass72/manuals/addons/r.damflood.html">r.dam.flood</a></td>
+    <td style="border: none">etc...</td>
+  </tr>
+</table>
+</ul>
+</section>
+
+<!-- Applications -->
+<section data-background-image="img/tl_3d_planting.jpg">
+<h1 class="shadow">Applications</h1>
+</section>
+
+<!-- Planting -->
+<section data-background-image="img/background_interaction_felt.png">
+<h2>Applications: 3D planting</h2>
+<img width="32%" src="img/tl_planting_1.jpg">
+<img width="32%" src="img/tl_planting_2.jpg">
+<img width="32%" src="img/tl_planting_3.jpg">
+<!--<img width="23%" src="img/tl_planting_4.jpg">-->
+<p>Planting patches of 3D trees by placing pieces of color coded felt and markers.</p>
+</section>
+
+<section data-background-image="img/background_interaction_felt.png">
+<h2>Applications: 3D planting</h2>
+<video  id="planting_video" data-autoplay class="stretch" style="margin-top: 1em" controls>
+<source src="video/case_study_video.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<script>
+document.getElementById("planting_video").currentTime = 83;
+</script>
+<p>Planting patches of 3D trees by placing pieces of color coded felt.</p>
+</section>
+
+<!-- Erosion control -->
+<section data-background-image="img/background_interaction_felt.png">
+<h2>Applications: erosion control</h2>
+<img width="23%" src="img/felt/felt_1.jpg">
+<img width="23%" src="img/felt/felt_2.jpg">
+<img width="23%" src="img/felt/felt_3.jpg">
+<img width="23%" src="img/felt/felt_4.jpg">
+<p>Modifying land cover with colored felt to reduce erosion.</p>
+</section>
+
+<!-- Subsurface soil moisture -->
+<section data-background-image="img/background_interaction_hands_markers.png">
+<h2>Applications: 3D soil moisture exploration</h2>
+<img height="190px" src="img/subsurface_1.jpg">
+<img height="190px" src="img/subsurface_2.jpg">
+<img height="190px" src="img/subsurface_3.jpg">
+<!--<img width="80%" src="img/subsurface_cross_section.png">-->
+</section>
+
+<section>
+<h2>Applications: 3D soil moisture exploration</h2>
+<video  data-autoplay class="stretch" style="margin-top: 1em" controls>
+<source src="video/tl_subsurface.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Exploring subsurface volumes as if digging with an excavator.</p>
+</section>
+
+<!-- Dam breach -->
+<section>
+<h2>Applications: Dam breach simulation</h2>
+<video  data-autoplay class="stretch" style="margin-top: 1em" controls>
+<source src="video/dam_breach_3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Simulate dam breach scenarios.</p>
+</section>
+
+<!-- Coastal flooding -->
+<section data-background-image="img/background_interaction_hands.png">
+<h2>Applications: coastal flooding</h2>
+<img width="32%" src="img/tl_coastal_1s.png">
+<img width="32%" src="img/tl_coastal_2s.png">
+<img width="32%" src="img/tl_coastal_4s.png">
+<p>Building coastal defenses to save homes from storm surge.</p>
+</section>
+
+<!-- Open source -->
+<section>
+<h2>Open source</h2>
+<img width="18%" src="img/tl_logo.png">
+<p>Tangible Landscape plugin for GRASS GIS <br>
+    <a href="https://github.com/tangible-landscape/grass-tangible-landscape">
+        <small>github.com/tangible-landscape/grass-tangible-landscape</small>
+    </a></p>
+<p>GRASS GIS module for importing data from Kinect v2 <br>
+    <a href="https://github.com/tangible-landscape/r.in.kinect">
+        <small>github.com/tangible-landscape/r.in.kinect</small>
+    </a></p>
+<p>Tangible Landscape repository on Open Science Framework <br>
+    <a href="https://osf.io/w8nr6/">
+        <small>osf.io/w8nr6</small>
+    </a></p>
+</section>
+
+<!-- Equipment list and budget -->
+<section>
+<h2>Build your own!</h2>
+<table style="font-size:0.6em">
+<tr><th>Type</th><th>Product example</th><th>Cost</th></tr>
+<tr><td>Software</td><td>Tangible Landscape plugin for GRASS GIS</td><td>$0</td></tr>
+<tr><td>Computer</td><td>System76 Oryx Pro</td><td>$1500</td></tr>
+<tr><td>Display</td><td>Samsung 23.6-Inch UHD-QHD Monitor</td><td>$350</td></tr>
+<tr><td>Projector</td><td>Epson PowerLite 1761W</td><td>$600</td></tr>
+<tr><td>3D sensor</td><td>Xbox One Kinect</td><td>$100</td></tr>
+<tr><td></td><td>Kinect Adapter for Windows</td><td>$40</td></tr>
+<tr><td>Stand</td><td>Avenger 40-Inch C-Stand with Grip Kit</td><td>$200</td></tr>
+<tr><td></td><td>2 x Avenger 3-Inch Baby Wall Plate with Swivel Pin</td><td>$80</td></tr>
+<tr><td></td><td>Kupo Convi Clamp with Adjustable Handle</td><td>$25</td></tr>
+<tr><td></td><td>Kupo Grip Head with Hex Stud</td><td>$30</td></tr>
+<tr><td></td><td>Kupo 20-Inch Hex Grip Arm</td><td>$40</td></tr>
+<tr><td>Peripherals</td><td>HDMI cable, extension cord</td><td>$20</td></tr>
+<tr><td>Modeling media</td><td>Waba Fun Kinetic Sand 11 Lbs</td><td>$50</td></tr>
+<tr style="border-top: 1px solid #383838"><td>Total</td><td></td><td>$3035</td></tr>
+</table>
+</section>
+
+<!-- Resources -->
+<section>
+<h2>Resources</h2>
+<!-- <img width="18%" src="img/tl_logo.png"> -->
+<p>Tangible Landscape website <br>
+    <a href="https://tangible-landscape.github.io">
+        <small>https://tangible-landscape.github.io</small>
+    </a></p>
+<p>Tangible Landscape wiki <br>
+    <a href="https://github.com/tangible-landscape/grass-tangible-landscape/wiki">
+        <small>https://github.com/tangible-landscape/grass-tangible-landscape/wiki</small>
+    </a></p>
+<p>Tangible Modeling with Open Source GIS <br>
+    <a href="http://www.springer.com/us/book/9783319257730">
+        <small>http://www.springer.com/us/book/9783319257730</small>
+    </a></p>
+<p>Immersive Tangible Geospatial Modeling <br>
+    <a href="https://www.researchgate.net/publication/309458110_Immersive_Tangible_Geospatial_Modeling">
+        <small>https://www.researchgate.net/publication/309458110_Immersive_Tangible_Geospatial_Modeling</small>
+    </a></p>
 </section>
 
 
-<!-- <section>
-<img height="100px" style="margin-top: 2em; margin-bottom: 1em" src="img/cgaBlack.png">
-<p style="margin-top: 1em;">
-The talk is presented by the <b>GeoForAll Laboratory</b> at the
-Center for Geospatial Analytics (CGA), North Carolina State University
-<p style="margin-top: 1em;">
-CGA is an interdisciplinary research and education center with focus on
-geospatial computing, modeling, analytics and geovisualization.
-<p style="margin-top: 1em;">
-<p style="font-size: 140%; margin-top: 1em;">
-<a href="http://geospatial.ncsu.edu/">geospatial.ncsu.edu</a>
+<!-- Live demo
+<section>
+<h3>Live demo</h3>
+<p>Come see our demo!</p>
+</section>
+-->
 
-<aside class="notes">
-   which is a project we developed as members of GeoForAll laboratory
-   to make landscape design process more effective through the use of Tangible
-   interaction, Immersive virtual environments, and geospatial analytics.
-   Our lab is part of the Center for Geospatial Analytics, which focuses
-   on educationa nd interdisciplinary research, and has been instrumental in
-   making this research happen.
-</aside>
-</section> -->
+
+<!-- Read more
+<section>
+<h2>Publications</h2>
+<img width="20%" src="img/publications/tl_book_cover.png">
+<p><small>Anna Petrasova, Brendan Harmon, Vaclav Petras, and Helena Mitasova. 2015. <a href="http://dx.doi.org/10.1007/978-3-319-25775-4">Tangible Modeling with Open Source GIS</a>, Springer International Publishing. DOI:<a href="http://dx.doi.org/10.1007/978-3-319-25775-4">http://dx.doi.org/10.1007/978-3-319-25775-4</a>
+</small></p>
+</section>
+-->
+
+<!--
 
 <section>
 <h2>Motivation for Tangible Interfaces for GIS</h2>
 <ul>
-    <!-- <li>Tangible User Interfaces (TUI) can helps us experience and better understand data and processes through tangible interaction.</li> -->
     <li>Interaction through mouse, keyboard and display does not encourage creativity.</li>
     <li>Manipulating computer models is not intuitive and requires specialized software and training.</li>
     <li>Collaboration is restricted as typically only one user at a time can navigate and modify models. </li>
@@ -209,21 +480,17 @@ geospatial computing, modeling, analytics and geovisualization.
 <aside class="notes">
     So why are we interested in Tangible interfaces?
     I am sure this photo shows a familiar setting -
-we often get together around a screen to solve a geospatial problem or use mouse or touch 
+we often get together around a screen to solve a geospatial problem or use mouse or touch
 to manipulate 3D data on 2D screen. Such manipulation of data often requires knowledge of a specific,
-often complex software, usually only single person can access the data 
-creating barriers to collaboration and creativity. 
+often complex software, usually only single person can access the data
+creating barriers to collaboration and creativity.
 </aside>
 </ul>
 
 <img height="250px" src="img/collaboration_computer.JPG">
 <img height="250px" src="img/art_rhino.jpg">
-<!-- </br></br></br> -->
-<!-- <h5>Tangible Landscape is designed to make scientific data,
-   models, and simulations exploratory, engaging, and fun</h5> -->
 </section>
 
-<!-- Near real time interaction -->
 <section>
 <h2>Tangible Landscape: real-time coupling with GIS</h2>
 <iframe data-autoplay <iframe width="560" height="315" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
@@ -233,12 +500,11 @@ creating barriers to collaboration and creativity.
 <aside class="notes">
     The new thing Tangible Landscape brings here is the real-time coupling
     with a full-fledged geographic information system. This means
-    we can easily plug in and automate different analyses and geospatial workflows 
+    we can easily plug in and automate different analyses and geospatial workflows
     depending on the application,
     which brings lot of flexibility.
 </aside>
 </section>
-
 
 <section>
 <h2>Interactions</h2>
@@ -258,12 +524,10 @@ creating barriers to collaboration and creativity.
         </tr>
 </table>
 <aside class="notes">
-You have so far seen only sculpting sand with our hands, where we modify the continuous elevation surface. However some applications require different types of input data, such as objects. To make Tangible Landscape flexible in this regard, we developed multiple ways to interact with the physical models. Here we use a wooden marker to specify point locations on the landscape, for example view points or trailheads. Recently we have started to experiment with using laser pointer to draw objects, such as points, lines or polygons. Another option is to use colored sand to create polygons where the color represents certain attribute of the polygon and the height of the sand can represent intensity of that property. The most recent interaction we are testing now is creating areas using colored felt or paper of different shapes placed on the model. 
+You have so far seen only sculpting sand with our hands, where we modify the continuous elevation surface. However some applications require different types of input data, such as objects. To make Tangible Landscape flexible in this regard, we developed multiple ways to interact with the physical models. Here we use a wooden marker to specify point locations on the landscape, for example view points or trailheads. Recently we have started to experiment with using laser pointer to draw objects, such as points, lines or polygons. Another option is to use colored sand to create polygons where the color represents certain attribute of the polygon and the height of the sand can represent intensity of that property. The most recent interaction we are testing now is creating areas using colored felt or paper of different shapes placed on the model.
 These interactions can be combined to achieve intuitive interactions for particular application. Now I will show you some of the applications we developed for different study sites, using different geospatial models and each of them has different type of interaction.
 </aside>
 </section>
-
-
 
 <section data-background-image="img/background_interaction_hands.png">
 <h2>Application: erosion control</h2>
@@ -279,15 +543,11 @@ These interactions can be combined to achieve intuitive interactions for particu
 Adding grass (light green) and patches of trees (darker green)
 changes the c-factor thus reducing erosion.
 <img width="900px" src="img/felt.png">
-<!-- demo -->
-<!-- <img width="23%" src="img/felt/felt_1.jpg">
 <img width="23%" src="img/felt/felt_2.jpg">
 <img width="23%" src="img/felt/felt_3.jpg">
-<img width="23%" src="img/felt/felt_4.jpg"> -->
+<img width="23%" src="img/felt/felt_4.jpg">
 </section>
 
-
-<!-- Soil moisture -->
 <section data-background-image="img/background_interaction_hands_markers.png">
 <h2>Applications: 3D soil moisture exploration</h2>
 <img height="190px" src="img/subsurface_1.jpg">
@@ -296,12 +556,10 @@ changes the c-factor thus reducing erosion.
 <img width="80%" src="img/cross_section.png">
 </section>
 
-<!-- Serious gaming with Tangible Landscape: Coastal -->
 <section>
 <h2>Serious games: coastal flooding</h2>
 <img width="32%" src="img/tl_coastal_1s.png">
 <img width="32%" src="img/tl_coastal_2s.png">
-<!--<img width="22%" src="img/tl_coastal_3s.png">-->
 <img width="32%" src="img/tl_coastal_4s.png">
 <p>Save houses from coastal flooding by building coastal defenses</p>
 <p style="font-size:0.75em">Structured problem-solving with rules, challenging objectives, and scoring</p>
@@ -310,12 +568,7 @@ changes the c-factor thus reducing erosion.
 </aside>
 </section>
 
-
-<!-- IVE COUPLING SLIDES "> -->
-
-<!-- motivation for coupling -->
-
-<section> 
+<section>
 <h2> Coupling Tangible Landscape with IVE </h2>
 <ul>
     <li> Better communicating the implications of landscape change </li>
@@ -323,25 +576,22 @@ changes the c-factor thus reducing erosion.
     <li> Assessing trade-offs between ecological and experiential quality (e.g., preferences, pyschological well-being) </li>
 </ul>
 <img class="stretch" src="img/flooding_secraf.jpg">
- 
+
     <aside class="notes">
-    
-    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective. We aimed to complete the picture by representing the landscape similar to how we perceive in human-scale. 
-    So why it is important to include human perception ? 
 
-    First, this allows for a more tangible understanding and communicating the implications of landscape change that are important components in decision making and stake-holder participation.  What it means if some areas is flooded ? or how your living environment looks like after some restoration intervention ? 
-    Second, it allows bringing designers into the table and include attributes that they care about, like composition of landscape, coherence and etc. 
-    Third, given our growing understanding about the impact of landscapes on individual’s mental and physical health , it is is imperative to find those sweet spots where the ecological functioning and human-perception measures such as aesthetic evaluation and landscape preferences are balanced. 
+    As you have seen so far, Tangible Landscape represents the landscape as a projection-augmented model which is perceived in a bird’s-eye perspective. We aimed to complete the picture by representing the landscape similar to how we perceive in human-scale.
+    So why it is important to include human perception ?
 
-    </aside>   
+    First, this allows for a more tangible understanding and communicating the implications of landscape change that are important components in decision making and stake-holder participation.  What it means if some areas is flooded ? or how your living environment looks like after some restoration intervention ?
+    Second, it allows bringing designers into the table and include attributes that they care about, like composition of landscape, coherence and etc.
+    Third, given our growing understanding about the impact of landscapes on individual’s mental and physical health , it is is imperative to find those sweet spots where the ecological functioning and human-perception measures such as aesthetic evaluation and landscape preferences are balanced.
+
+    </aside>
 </section>
-
-<!-- --SLIDE 18--Landforms -->
 
 <section>
 <h4> Landform and water bodies </h4>
 <img class="stretch" src="img/coupling_case.jpg">
-<!-- <video data-autoplay  width="800" src="img/water2.mp4" frameborder="0"></iframe> -->
 <div style="text-align:left">
 <p2> <b>Interaction:</b> hand, sculpting knife </p2> <br/>
 <p2> <b>3D processing:</b> terrain GeoTIFF raster and water polygon </p2> <br/>
@@ -359,7 +609,6 @@ changes the c-factor thus reducing erosion.
 
 </section>
 
-<!----SLIDE 19-- Plant species -->
 <section>
 <h4> Vegetated surfaces  </h4>
 <img class="stretch" src="img/coupling_case2.jpg">
@@ -386,7 +635,6 @@ changes the c-factor thus reducing erosion.
 
 </section>
 
-<!----SLIDE 21-- Human-views -->
 <section>
 <h4> Human views </h4>
 <img class="stretch" src="img/coupling_case7.jpg">
@@ -396,13 +644,11 @@ changes the c-factor thus reducing erosion.
 <p2> <b>Simulation:</b> Viewshed </p2> <br/>
 <p2> <b>Feedback:</b> Viewshed area, depth of view, viewdepth variation </p2> <br/>
 </div>
-
  <aside class="notes">
    The 3D model is interactive so anytime during the interaction users can freely navigate in the environment and explore diffrent vantage points using the mouse.
    But we wanted to keep that feature interactive as well. We used wooden marker with colored tip, that denotes the viewers location and direction of view.
    The feature is exported as a polyline feature. Once imported in blender, The scene camera is then relocated to the line’s starting point and the direction of view is aligned to the line’s endpoint.
  </aside>
-
 </section>
 
 <section>
@@ -416,61 +662,7 @@ Platform for decision-making and science communication
 Making geospatial data and tools accessible to all
 </section>
 
-
-<!-- Open source -->
-<section>
-<h2>Open source</h2>
-<!--<p><a href="https://github.com/baharmon/tangible_topography">Repository with experiment instructions, scripts, data, and results</a></p>-->
-<p>Tangible Landscape plugin for GRASS GIS <br>
-    <a href="https://github.com/tangible-landscape/grass-tangible-landscape">
-        github.com/tangible-landscape/grass-tangible-landscape
-    </a></p>
-<p>GRASS GIS module for importing data from Kinect v2 <br>
-    <a href="https://github.com/tangible-landscape/r.in.kinect">
-        github.com/tangible-landscape/r.in.kinect
-    </a></p>
-<p>Tangible Landscape repository on Open Science Framework <br>
-    <a href="https://osf.io/w8nr6/">
-        osf.io/w8nr6
-    </a></p>
-<img width="20%" src="img/tl_logo.png">
-</section>
-
-<!-- Equipment list and budget -->
-<section>
-<h2>System cost</h2>
-<table>
-<tr><th>Type</th><th>Product example</th><th>Cost</th></tr>
-<tr><td>Software</td><td>Tangible Landscape plugin for GRASS GIS</td><td>$0</td></tr>
-<tr><td>Computer</td><td>System76 Oryx Pro</td><td>$1500</td></tr>
-<tr><td>Computer</td><td>VR ready PC or laptop </td><td>$1500</td></tr>
-<tr><td>Projector</td><td>Optoma ML750 WXGA LED</td><td>$500</td></tr>
-<tr><td>3D sensor</td><td>Xbox One Kinect</td><td>$100</td></tr>
-<tr><td></td><td>Kinect Adapter for Windows</td><td>$50</td></tr>
-<tr><td>Stand</td><td>2 x Avenger 40-Inch C-Stand with Grip Kit</td><td>$400</td></tr>
-<tr><td></td><td>2 x Avenger 3-Inch Baby Wall Plate</td><td>$20</td></tr>
-<tr><td>Peripherals</td><td>HDMI cable, extension cord</td><td>$20</td></tr>
-<tr><td>Modeling media</td><td>Waba Fun Kinetic Sand 11 Lbs</td><td>$50</td></tr>
-<tr><td>IVE headset</td><td>Oculus DK2 or CV1 </td><td>$600</td></tr>
-<tr style="border-top: 1px solid #383838"><td>Total</td><td></td><td>$4740</td></tr>
-</table>
-</section>
-
-<!-- Book -->
-<section>
-<h3>Resources</h3>
-<!-- website, open education paper, book -->
-<ul>
-    <li>Tangible Landscape website:  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a></li>
-    <li>Tangible Landscape wiki: <br><a href="https://github.com/tangible-landscape/grass-tangible-landscape/wiki">github.com/tangible-landscape/grass-tangible-landscape/wiki</a> </li>
-    <li>Book: <a href="http://www.springer.com/us/book/9783319257730">
-        <em>Tangible Modeling with Open Source GIS</em></a></li>
-<li><a href="https://www.researchgate.net/publication/309458110_Immersive_Tangible_Geospatial_Modeling">
-    Immersive Tangible Geospatial Modeling.</a> Proceedings of ACM SIGSPATIAL 2016.</li>
-    
-</ul>
-<!-- <img width="20%" src="img/tl_book_cover.png"> -->
-</section>
+-->
 
 <!-- This is a generated file. Do not edit. -->
         </div>  <!-- slides -->
@@ -490,9 +682,9 @@ Making geospatial data and tools accessible to all
 
                 // Display a presentation progress bar
                 progress: true,
-                
+
                 center: true,
-                
+
                 // Display the page number of the current slide
                 slideNumber: false,
 
@@ -507,7 +699,7 @@ Making geospatial data and tools accessible to all
                 // specified using percentage units.
                  width: 1060,
                 // height: 700,
-                
+
                 // Factor of the display size that should remain empty around the content
                 margin: 0.05,  // increase?
 
@@ -582,4 +774,3 @@ Making geospatial data and tools accessible to all
 
     </body>
 </html>
-

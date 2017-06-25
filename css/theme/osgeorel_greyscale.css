@@ -457,6 +457,13 @@ h3.shadow {
   -moz-transition: color 0.15s ease;
   transition: color 0.15s ease; }
 
+.reveal a.blue {
+  color: #728FCE;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease;
+  -moz-transition: color 0.15s ease;
+  transition: color 0.15s ease; }
+
 .reveal a:hover {
   color: #0000f1;
   text-shadow: none;
