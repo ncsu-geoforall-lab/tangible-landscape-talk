@@ -415,6 +415,15 @@ Your browser does not support the video tag.
 
 </section>
 
+<!----
+<section data-markdown>
+  |Markdown | Less | Pretty|
+  |:-------------:|: -------------:|
+  |![Blender Viewport](img/realism.jpg) | ![Blender Viewport](img/realism.jpg)
+  |hello|Hello| -->
+
+
+</section>
 <!----SLIDE 14--Coupling-->
 <section>
 <h4> The coupling rationale </h4>
@@ -440,10 +449,8 @@ Your browser does not support the video tag.
 
 <img class="stretch" src="img/New_setup.png">
     <aside class="notes">
-
     For implementing the concept, we added a 3D modeling and game engine software, called blender,
     to the tangible landscape setup with outputs to a display and an immersive virtual reality headset.
-
     </aside>
 </section>
 
@@ -466,6 +473,8 @@ Your browser does not support the video tag.
     Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
     The software has an internal python-based IDE and add-ons for importing GIS data to georeference the scene, and displaying the viewport in HMDs.
     It also allows realtime high-quality rendering and shading.
+    The shading parameters such as ambient occlusion, ambient lightning, anti-aliasing and raytrace shadows are set-up (OpenGL shading) are supported in real-time viewport rendering.
+
 
     </aside>
 </section>
@@ -575,12 +584,9 @@ Your browser does not support the video tag.
 </section>
 
 <!----SLIDE 22 immersion-- -->
-
 <section>
-<h4> Immersion </h4>
-<img class="stretch" src="img/coupling_case4.jpg">
-<div style="text-align:left">
-</div>
+  <h4> Immersion </h4>
+   <video data-autoplay class="stretch"  src="video/immersion.mp4" frameborder="0"></iframe>
 
 <aside class="notes">
 Using a virtual reality addon, blender viewport is continuously displayed in both viewport and headmounted display,
@@ -590,6 +596,14 @@ One additional camera is also set to follow the imported trail feature to initia
 </section>
 
 <!----SLIDE 23 Realism-- -->
+
+<section>
+
+<h4> Realism </h4>
+<img class="stretch" src="img/realism.jpg" >
+
+</section>
+
 <section>
 <h4> Realism </h4>
 <img class="stretch" src="img/coupling_case5.jpg">
@@ -608,8 +622,10 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 
 <!----SLIDE 24 Realism-- -->
 <section>
-<h4> Realism </h4>
+
+<h4> Even more realistic </h4>
 <img class="stretch" src="img/7.jpg">
+<p style="font-size:0.5em"> Render engine: Cycles &nbsp  &nbsp&nbsp &nbsp  GPU Rendering time: 1 min &nbsp &nbsp &nbsp 100 samples </p>
 <aside class="notes">
 
 To gain even higher realism user can switch to cycles render that produces a much higher resolutions and rendering fidelity.
@@ -643,7 +659,7 @@ or it can be used as a powerful medium to communicate landscape science with you
 <!----SLIDE 26 -- Open source -->
 <section>
 <h2>Open source</h2>
-<!--<p><a href="https://github.com/baharmon/tangible_topography">Repository with experiment instructions, scripts, data, and results</a></p>-->
+<!--<p><a href="https://github.com/baharmon/tangible_topography"> Repository with experiment instructions, scripts, data, and results</a></p>-->
 <p>Tangible Landscape plugin for GRASS GIS <br>
     <a href="https://github.com/tangible-landscape/grass-tangible-landscape">
         github.com/tangible-landscape/grass-tangible-landscape
@@ -657,7 +673,6 @@ or it can be used as a powerful medium to communicate landscape science with you
         osf.io/w8nr6
     </a></p>
 <img width="20%" src="img/tl_logo.png">
-
 <aside class="notes">
 
 This system and all other development made by our team is free and open source and we are committed to help you setting up your own Tangible landscape system.
@@ -676,7 +691,6 @@ This system and all other development made by our team is free and open source a
         <em>Tangible Modeling with Open Source GIS</em></a></li>
 <li><a href="https://www.researchgate.net/publication/309458110_Immersive_Tangible_Geospatial_Modeling">
     Immersive Tangible Geospatial Modeling.</a> Proceedings of ACM SIGSPATIAL 2016.</li>
-
 </ul>
 <!-- <img width="20%" src="img/tl_book_cover.png"> -->
 
