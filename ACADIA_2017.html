@@ -163,13 +163,17 @@
 
 <!-- --SLIDE 1-- intro-->
 <section>
-<h2 style="color: #888"> ACADIA 2017 </h2>
-<h3 style="margin-top: 0.5em; margin-bottom: 0em; color: #000"> Tangible immersion for ecological design</h3>
+<h3 style="color: #888"> ACADIA 2017 </h3>
+<h1 class="shadow">Tangible immersion for ecological design</h1>
 <br/>
 <h5 style="color: #888">Payam Tabrizian,  Brendan Harmon, Anna Petrasova, Vaclav Petras, Helena Mitasova</h5>
+<br/>
 
-<img height="80px" style="margin-top: 2em" src="img/cgaBlack.png">
-<h5 style="color: #000"> North Carolina State University</h5>
+<img height="70px" style="horizontal-align: left" src="img/logos/ncstate2.png">
+<img height="60px" style="margin-right: 4em" src="img/cgaBlack.png">
+
+<img height="50px" style="margin-left: 2em" src="img/logos/LSU_logo.png">
+
 
  <aside class="notes">
    Good morning everyone and thank you x for introduction, today I will talk
@@ -177,34 +181,12 @@ about Immersive Tangible landscape modelling.
  </aside>
 </section>
 
-<!-- --SLIDE 2-- CGA-->
-<section>
-<img height="100px" style="margin-top: 2em; margin-bottom: 1em" src="img/cgaBlack.png">
-<p style="margin-top: 1em;">
-The talk is presented by the <b>GeoForAll Laboratory</b> at the
-Center for Geospatial Analytics (CGA), North Carolina State University
-<p style="margin-top: 1em;">
-CGA is an interdisciplinary research and education center with focus on
-geospatial computing, modeling, analytics and geovisualization.
-<p style="margin-top: 1em;">
-<p style="font-size: 140%; margin-top: 1em;">
-<a href="http://geospatial.ncsu.edu/">geospatial.ncsu.edu</a>
-
-
-<aside class="notes">
-
-Which is a project we developed at NCStates' GeoForAll laboratory to make landscape design process more effective through the use of Tangible interaction,
-Immersive virtual environments, and geospatial analytics.
-
-Geoforall lab is part of the Center for Geospatial Analytics, which focuses on geospatial computing, modeling, analytics and geovisualization.
-
-</aside>
 </section>
 
 <!-- --SLIDE 3--Tangible interfaces for GIS -->
 <section>
 <h2>Tangible interfaces for geospatial modeling</h2>
-<img class="stretch" src="img/system/tl_concept.png">
+<img class="stretch" src="img/planting_1.jpg">
 <p>Couple physical and digital geospatial models</p>
 </section>
 
@@ -303,13 +285,6 @@ Source: <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://tangi
 </section>
 
 
-<!-- --SLIDE 11-- Scanning -->
-<section>
-<h2>Realtime 3D scanning</h2>
-<img class="stretch" src="img/interaction/fusion.jpg">
-<p>with Kinect sensor</p>
-</section>
-
 <!-- --SLIDE 12-- Real time interaction Video -->
 <section>
 <h2>Tanigble interaction with GIS</h2>
@@ -338,11 +313,18 @@ Your browser does not support the video tag.
     <h2>GRASS GIS</h2>
     <img class="stretch" src="img/hexagons_3d_white_outlier.png">
     <ul>
-        <li>free and open source (reduced cost of the system, more flexibility)</li>
-        <li>wide range of geospatial analyses (hydrology, remote sensing, vector network analysis, 3D rasters, ...)</li>
-        <li>easy to script in Python</li>
-        <li>fast algorithms in C/C++</li>
+        <li>Geographic Information System </li>
+        <li>Free and open source </li>
+        <li>Extensive Library</li>
+        <li>Easy scripting in Python, fast algorithms in C/C++</li>
     </ul>
+
+    <aside class="notes">
+      reduced cost of the system, more flexibility
+      Wide range of geospatial analyses (hydrology, remote sensing, vector network analysis, 3D rasters, ...)
+      Extensive, peer-reviewed library with over 350 modules for geospatial modeling, analysis, and simulation
+
+    </aside>
 
 </section>
 
@@ -353,10 +335,10 @@ Your browser does not support the video tag.
 <img class="stretch" src="img/blender_sample.jpg">
 
 <ul>
-    <li>Free and open source 3d modelling and game engine software </li>
-    <li>Easy scripting (Python) </li>
-    <li>GIS and Virtual reality plugin</li>
-    <li>High-quality real-time rendering and shading </li>
+  <li> 3D modeling, rendering, animation, physics, and game engine
+  <li> Free and open source, easy scripting in Python  </li>
+  <li> GIS and VR pluginsv </li>
+  <li> Real-time raytraced rendering </li>
 </ul>
 <!-- <p style="font-size:0.5em"> agiro.cgsociety.org </p>-->
 
@@ -422,7 +404,7 @@ Now I will show you some of the applications we developed for different study si
 <!-- --SLIDE 18--Landforms -->
 
 <section>
-<h2> Landform and water bodies </h2>
+<h2> Landform and water </h2>
 <img class="stretch" src="img/coupling_case.jpg">
 <!-- <video data-autoplay  width="800" src="img/water2.mp4" frameborder="0"></iframe> -->
 
@@ -438,7 +420,7 @@ Now I will show you some of the applications we developed for different study si
 
 <!----SLIDE 19-- Plant species -->
 <section>
-<h2> Vegetated surfaces  </h2>
+<h2> Vegetation  </h2>
 <img class="stretch" src="img/coupling_case2.jpg">
 
   <aside class="notes">
@@ -459,7 +441,7 @@ Now I will show you some of the applications we developed for different study si
 
 <!-- --SLIDE 20-- Trails, features -->
 <section>
-<h2> Linear features, pathes </h2>
+<h2> Paths </h2>
 <img class="stretch" src="img/coupling_case3.jpg">
 
  <aside class="notes">
@@ -476,7 +458,7 @@ Now I will show you some of the applications we developed for different study si
 
 <!----SLIDE 21-- Human-views -->
 <section>
-<h2> Camera control </h2>
+<h2> Cameras </h2>
 <img class="stretch" src="img/coupling_case7.jpg">
 
  <aside class="notes">
@@ -523,20 +505,19 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <!-- --SLIDE 26 --Future Work -->
 
 <section>
-<h2> Road map: EVEE </h2>
-<img class="stretch"  src="img/Evee2.jpg">
+<h2> Road map: Eevee Renderer for Blender 2.8 </h2>
+<video data-autoplay class="stretch"  src="video/Eevee_edit.mp4" frameborder="0"></iframe>
 <ul>
-<li> Realtime render engine (OpenGL 3.0) </li>
-</li>
+<li> Real-time physically based-render engine, OpenGL 3.3+ </li>
 </ul>
-<p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i> <a href="https://twitter.com/huanghai0712">@huanghai0712</a></small></p>
+<p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i> <a href="https://www.blender.org/2-8/">Blender organization</a></small></p>
 </section>
 
 <!-- --SLIDE 27 --TL + robotic fabrication + streaming data + autonomous construction -->
 <section>
-<h2>Tangible Landscape with robotic fabrication, streaming data, and autonomous construction</h2>
+<h2>Tangible Landscape</h2>
 <img  class="stretch" src="img/system/system_schema_land.png">
-<p>Bi-directionally coupling physical and digital landscapes</p>
+<p> With robotic fabrication, streaming data, & autonomous construction</p>
 </section>
 
 <!----SLIDE 27 -- Open source -->
@@ -547,6 +528,10 @@ Both low-poly models and blender scene are rendered in realtime and update almos
     <a href="https://github.com/tangible-landscape/grass-tangible-landscape">
         github.com/tangible-landscape/grass-tangible-landscape
     </a></p>
+    <p>Tangible Landscape plugin for Blender <br>
+        <a href="https://github.com/tangible-landscape/tangible-landscape-immersive-extension">
+            github.com/tangible-landscape/tangible-landscape-immersive-extension
+        </a></p>
 <p>GRASS GIS module for importing data from Kinect v2 <br>
     <a href="https://github.com/tangible-landscape/r.in.kinect">
         github.com/tangible-landscape/r.in.kinect
@@ -555,7 +540,8 @@ Both low-poly models and blender scene are rendered in realtime and update almos
     <a href="https://osf.io/w8nr6/">
         osf.io/w8nr6
     </a></p>
-<img width="20%" src="img/tl_logo.png">
+
+<img width="20%" src="img/logos/gpl.png">
 <aside class="notes">
 
 This system and all other development made by our team is free and open source and we are committed to help you setting up your own Tangible landscape system.
@@ -576,7 +562,7 @@ This system and all other development made by our team is free and open source a
     Immersive Tangible Geospatial Modeling.</a> Proceedings of ACM SIGSPATIAL 2016.</li>
 </ul>
 <!-- <img width="20%" src="img/tl_book_cover.png"> -->
-
+<img  class="stretch" src="img/logos/tl_logo.png">
 <aside class="notes">
 
 If you are interested to learn more about Tangible landscape, These are some useful resources that can get you started.
@@ -588,7 +574,9 @@ If you are interested to learn more about Tangible landscape, These are some use
 
 
 <!----SLIDE 28 Video-- -->
+
 <section>
+  <h3>Designing with Tangible Landscape</h3>
    <video data-autoplay class="stretch"  src="video/case_study_video.mp4" frameborder="0"></iframe>
    <aside class="notes">
 
