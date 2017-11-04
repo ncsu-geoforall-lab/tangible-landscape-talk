@@ -301,8 +301,7 @@ Your browser does not support the video tag.
 <img class="stretch" src="img/New_setup.png">
 
     <aside class="notes">
-    For implementing the concept, we added a 3D modeling and game engine software, called blender,
-    to the tangible landscape setup with outputs to a display and an immersive virtual reality headset.
+      Using 3D modelling for aesthtic discovery along with quantative assessment
     </aside>
 
 </section>
@@ -319,10 +318,10 @@ Your browser does not support the video tag.
     </ul>
 
     <aside class="notes">
-      reduced cost of the system, more flexibility
-      Wide range of geospatial analyses (hydrology, remote sensing, vector network analysis, 3D rasters, ...)
-      Extensive, peer-reviewed library with over 350 modules for geospatial modeling, analysis, and simulation
-
+      For Geospatial analysis, we GRASS GIS which is a free and open source software. It has a python API that allows for easy high-level development and C++ for developing efficient algorithms.
+      The softawre is extensively used and maintained by scientific communities in various domains ranging from Geologists to ecologists and urban planners,
+      resulting in more than 350 simulation modules backed by peer-reviewed publications.
+      It supports various datatypes including vectors, rasters, 3D raster and temporal data.
     </aside>
 
 </section>
@@ -336,17 +335,16 @@ Your browser does not support the video tag.
 <ul>
   <li> 3D modeling, rendering, animation, physics, and game engine
   <li> Free and open source, easy scripting in Python  </li>
-  <li> GIS and VR pluginsv </li>
+  <li> GIS and VR plugins </li>
   <li> Real-time raytraced rendering </li>
 </ul>
 <!-- <p style="font-size:0.5em"> agiro.cgsociety.org </p>-->
 
     <aside class="notes">
 
-    What is Blender? Why Blender?
-    Blender is a free and open source program for modeling, rendering, simulation, animation, and game design.
-    The software has an internal python-based IDE and add-ons for importing GIS data to georeference the scene, and displaying the viewport in HMDs.
-    It also allows realtime high-quality rendering and shading.
+    We use blender for 3D modelling which is a free and open source program for modeling, rendering, simulation, animation, and game design.
+    The software has an internal python-based IDE and add-ons for importing GIS data to georeference the 3d scene and displaying the viewport in HMDs.
+    It also allows realtime high-quality rendering and shading at the viewport.
 
     </aside>
 </section>
@@ -357,8 +355,12 @@ Your browser does not support the video tag.
 <img class="stretch" src="img/Coupling_diagram.jpg">
 
     <aside class="notes">
-    Briefly describing the workflow, GRASS GIS and Blender are loosely coupled through file-based communication. As user interacts with the tangible model or objects, GRASS GIS sends a copy of the geo-coordinated information or simulation to a specified system directory.
-    We implemented a monitoring module in blender scripting environment that constantly watches the directory, identifies the type of incoming information, and apply relevant operations needed to update the 3d model. The input data can range from geospatial features like a raster or a point cloud, simple coordinates as a text file, or signals that prompt a command such as removing an object from the scene.
+
+    Briefly describing the workflow, GRASS GIS and Blender are coupled either through loose file-based communication or with Sockets through network. As user interacts with the tangible model or objects, the depth and color information is scanned using kinenct or a similar 3D sensor.
+    The scanned informartion is processed is used as input for geodpatial analysis in GRASS GIS. Examples include hyrodolgical simulations, erosion, sedimentation, landform detection, fire spread and so on.
+    The analysis output is then projected as a map back onto the model or as numerical ouput displayed next to the model.
+    In blender, We implemented a monitoring module that constantly watches the directory, identifies the type of incoming information, and applies relevant operations needed to update the 3d model. The input data can range from geospatial features like a raster or a point cloud, simple coordinates as a text file, or signals that prompt a command such as removing an object from the scene.
+
     </aside>
 
 </section>
@@ -383,19 +385,11 @@ Your browser does not support the video tag.
 </table>
 <aside class="notes">
 
-To make Tangible Landscape more flexible, we developed multiple ways to interact with the physical models.
-Here we use tangible objects, like a wooden marker to specify point locations on the landscape,lets say view points or trailheads, single trees and etc.
-
-<br>Recently, we have started to experiment with using laser pointer to draw objects, such as points, lines or polygons.</br>
-
+In addition to the sculpting, We have developed other interaction modes suitable to a particular design feature.
+For example, tangible objects like wooden marker can be used to specify isolated objects ,lets say a building  or a waypoints, single trees and etc.
+Laser pointer can be used to draw linear features like routes.
 <br>Another option is to use colored sand to create polygons where the color represents certain attribute of the polygon and the height of the sand can represent intensity of that property.</br>
-
 <br>Our most recent interaction is creating areas using colored felt of different shapes placed on the model.</br>
-
-These interactions can be combined to achieve intuitive interactions for particular application.
-
-Now I will show you some of the applications we developed for different study sites, using different geospatial models and each of them has different type of interaction.
-
 </aside>
 </section>
 
@@ -408,11 +402,10 @@ Now I will show you some of the applications we developed for different study si
 <!-- <video data-autoplay  width="800" src="img/water2.mp4" frameborder="0"></iframe> -->
 
    <aside class="notes">
-    Now lets see how some of the landscape features are processed through the application.
-    For example, when landscape is manipulated with hand, a geotiff raster and a polygon related to water is processed.
-    As users carves the landscape, Water flow and accumulation simulations are continuously projected onto the physical model.
+    As an example, we show a simple landscape design procedure.
+    In the first step user sculpts the terrain to create a pond and regulate surface water flow. As she manipulates the landscape, Water flow and accumulation simulations are continuously projected onto the physical model.
     Numeric indicators about the depth and surface area of the retained water is projected.
-    At the same time, point-cloud and water polygon is transferred to blender update the 3D model.
+    Also, point-cloud and water polygon is transferred to blender update the 3D model.
    </aside>
 
 </section>
@@ -426,8 +419,8 @@ Now I will show you some of the applications we developed for different study si
 
   Users can design tree patches using colored felt pieces. They can either draw and cut their prefered shapes using scissors, or select from a library of cutouts with various shapes.
   Each color represents a landscape class based on National landcover datast classification, like decidous, evergreen etc. For instance in this example green denotes evergreen class and
-  eastern pine trees, red means decidous and red maple, blue represents wetland species and river birch.
-  Grass GIS applies image segmentation and classification to the scanned image to assign RGB values to their corresponding landscape classes.
+  eastern pine trees, red denotes decidous and red maple and blue represents river birch which is suitable for soil remediation .
+  Grass GIS performs image segmentation and classification to the scanned image to assign RGB values to their corresponding landscape classes.
   Using landscape structure analysis we compute and project various metrics related to landscape heterogeneity, biodiversity and complexity,
   which as you can see is projected below the landscape model.
 
@@ -486,6 +479,12 @@ One additional camera is also set to follow the imported trail feature to initia
 
 <h2> Realism </h2>
 <img class="stretch" src="img/realism.jpg" >
+<aside class="notes">
+
+Optionally, user can manipulate degree of realism. We assigned each 3D feature from the sky to the trees to a low-poly counterpart.
+Both low-poly models and blender scene are rendered in realtime and update almost instantly.
+
+</aside>
 
 </section>
 
@@ -493,12 +492,7 @@ One additional camera is also set to follow the imported trail feature to initia
 <h2> Realism </h2>
 <img class="stretch" src="img/coupling_case5.jpg">
 
-<aside class="notes">
 
-Optionally, user can manipulate degree of realism. We assigned each 3D feature from the sky to the trees to a low-poly counterpart.
-Both low-poly models and blender scene are rendered in realtime and update almost instantly.
-
-</aside>
 </section>
 
 <!-- --SLIDE 26 --Future Work -->
@@ -509,6 +503,14 @@ Both low-poly models and blender scene are rendered in realtime and update almos
 <ul>
 <li> Real-time physically based-render engine, OpenGL 3.3+ </li>
 </ul>
+<aside class="notes">
+
+It is possible to achieve more enhanced realism with the recently developed render engine, EEvee.
+Eevee is a fully-featured physically based-rendering engine for real-time visualization.
+It suports advanced rendering features such as volumetrics, screen-space reflections and refractions, soft shadows as well as
+post-processing effects such as ambient occlusion, depth of field, camera motion blur and bloom.
+
+</aside>
 <p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i><a href="https://www.blender.org/2-8/">Blender organization</a></small></p>
 </section>
 
