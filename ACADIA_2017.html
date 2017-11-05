@@ -1,0 +1,822 @@
+﻿<!doctype html>
+<html lang="en">
+<!-- This is a generated file. Do not edit. -->
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tangible immersion for ecological design</title>
+
+        <meta name="description" content="Slides for Immersive Tangible Landscape ICC 2017 talk">
+        <meta name="author" content="NCSU GeoForAll Lab members">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/osgeorel_greyscale.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For chalkboard plugin -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+        body {
+        /*background-color: #FFF !important;*/
+        /*
+          background-image: url("pictures/elevation-nagshead.gif");
+          background-repeat: no-repeat;
+          background-position: left bottom;*/
+        }
+        .reveal section img {
+            background: transparent;
+            border: 0;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.15);
+        }
+        /* for standalone frame */
+        /*
+        iframe {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        */
+        /* display: inline; background-color: #002B36; padding: 0px; margin: 0px */
+        .rounded-corners {
+            border: 0px solid black;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -khtml-border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        a:hover {
+            color: #444 !important;
+            text-decoration: underline !important;
+        }
+        h1, h2, h3, h4, h5 {
+            text-transform: none !important;
+            /* word-break: keep-all; text-transform: none; font-size: 200%; line-height: 110%; */
+            /* color: #060 !important; */
+            /* color: #444 !important; */ /* grey from the wab page */
+            font-weight: bold !important;
+            -webkit-hyphens: none !important;
+            -moz-hyphens: none !important;
+            -ms-hyphens: none !important;
+            hyphens: none !important;
+            line-height: 110% !important;
+        }
+        .reveal .progress span {
+            background-color: #444 !important;
+        }
+        /* predefined element positioning */
+        .top {
+            /*position: relative;*/
+            top: 5%;
+            height: 45%; /* is the height even needed? */
+        }
+        .bottom {
+            height: 45%;
+        }
+        .ne {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .nw {
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .se {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
+            height: 45%;
+            width: 45%;
+        }
+        .sw {
+            position: absolute;
+            bottom: 5%;
+            left: 5%;
+            height: 45%;
+            width: 45%;
+        }
+
+        /* classes for sections with predefined elements */
+        /* using !important because, reveal styles are applied afterwards  */
+        .right, .textimg > img, .textimg > video, .textimg > iframe, .imgtext > p, .imgtext > ul, .imgtext > ol, .imgtext > div {
+            float: right;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        .left, .imgtext > img, .imgtext > video, imgtext > iframe, .textimg > p, .textimg > ul, .textimg > ol, .textimg > div {
+            float: left;
+            text-align: left;
+            max-width: 47% !important;
+        }
+        li > ul, li > ol {
+            font-size: 85% !important;
+            line-height: 110% !important;
+        }
+        .small {
+            font-size: smaller !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        .credit {
+            font-size: small !important;
+            color: gray;
+            margin: 0.1em !important;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="reveal">
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+
+
+<!-- --SLIDE 1-- intro-->
+<section>
+<h3 style="color: #888"> ACADIA 2017 </h3>
+<h1 class="shadow">Tangible immersion for ecological design</h1>
+<br/>
+<h5 style="color: #888">Payam Tabrizian,  Brendan Harmon, Anna Petrasova, Vaclav Petras, Helena Mitasova</h5>
+<br/>
+
+<img height="70px" style="horizontal-align: left" src="img/logos/ncstate2.png">
+<img height="60px" style="margin-right: 4em" src="img/cgaBlack.png">
+
+<img height="50px" style="margin-left: 2em" src="img/logos/LSU_logo.png">
+
+
+ <aside class="notes">
+   Good morning everyone and thank you x for introduction, today I will talk
+about Immersive Tangible landscape modelling.
+ </aside>
+</section>
+
+</section>
+
+<!-- --SLIDE 3--Tangible interfaces for GIS -->
+<section data-background="img/planting_1.jpg">
+<h2 class="shadow">Tangible interfaces for geospatial modeling</h2>
+<h3 class="shadow"> Couple physical and digital geospatial models </h2>
+</section>
+
+<!--  History -->
+
+<!-- --SLIDE 4-- Urp -->
+<section>
+<h2>Augmented architectural models</h2>
+<img class="stretch" src="img/history/urp.png">
+<p><b>Urp, 1996-2001</b></p>
+<p><small>John Underkoffler and Hiroshi Ishii. 1999. Urp: a luminous-tangible workbench for urban planning and design. In CHI ’99 Proceedings of the SIGCHI conference on Human Factors in Computing Systems. New York, New York, USA: ACM Press, 386–393. DOI:<a href="http://dx.doi.org/10.1145/302979.303114">http://dx.doi.org/10.1145/302979.303114</a></small></p>
+<p><small>Source: <i class="fa fa-copyright" aria-hidden="true"></i> <a href="https://www.media.mit.edu/projects/luminous-roomurp/">Tangible Media Group, MIT Media Lab</a></small></p>
+</section>
+
+<!-- --SLIDE 4-- Sandscape and Illuminating Clay -->
+<section>
+<h2>Augmented sandboxes</h2>
+<img height="250px" src="img/history/sandscape.png">
+<img height="250px" src="img/history/illuminating_clay.png">
+<p><b>Sandscape</b> &amp; <b>Illuminating Clay, 2002-2004</b></p>
+<p><small>
+H. Ishii, C. Ratti, B. Piper, Y. Wang, A. Biderman, and E. Ben-Joseph. 2004. Bringing Clay and Sand into Digital Design — Continuous Tangible user Interfaces. BT Technol. J. 22, 4 (2004), 287–299. DOI:<a href="http://dx.doi.org/10.1023/B:BTTJ.0000047607.16164.16">http://dx.doi.org/10.1023/B:BTTJ.0000047607.16164.16</a>
+</small></p>
+<p><small>
+Source: <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://tangible.media.mit.edu/project/illuminating-clay/">Tangible Media Group, MIT Media Lab</a>
+</small></p>
+</section>
+
+<!-- --SLIDE 5-- XenoVision Mark III Dynamic Sand Table -->
+<section>
+<h2>Actuated pin tables</h2>
+<img height="250px" src="img/history/xenovision_2.jpg">
+<img height="250px" src="img/history/xenovision_3.gif">
+<p><b>XenoVision Mark III Dynamic Sand Table, 2004</b></p>
+<p><small>Source: <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://www.xenotran.com/">Xenotran</a></small></p>
+</section>
+
+<!-- --SLIDE 6-- Tangible Geospatial Modeling System -->
+<section>
+<h2>Augmented sandboxes</h2>
+<img height="250px" src="img/history/tangeoms_1.jpg">
+<img height="250px" src="img/history/tangeoms_2.jpg">
+<p><b>Tangible Geospatial Modeling System, 2006-2010</b></p>
+<p><small>Laura Tateosian, Helena Mitasova, Brendan A. Harmon, Brent Fogleman, Katherine Weaver, and Russell S. Harmon. 2010. TanGeoMS: Tangible Geospatial Modeling System. IEEE Trans. Vis. Comput. Graph. 16, 6 (2010), 1605–12. DOI:<a href="http://dx.doi.org/10.1109/TVCG.2010.202">http://dx.doi.org/10.1109/TVCG.2010.202</a>
+</small></p>
+<p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i> <a href="http://www4.ncsu.edu/~hmitaso/wrriwork/tangis/tangis.html">NCSU GeoForAll Lab</a></small></p>
+</section>
+
+<!-- --SLIDE 7-- Collaborative Design Platform -->
+<section>
+<h2>Augmented architectural models</h2>
+<img class="stretch" src="img/history/cdp.jpg">
+<p><b>Collaborative Design Platform, 2011-present</b></p>
+<p><small>Gerhard Schubert, Sebastian Riedel, and Frank Petzold. 2013. Seamfully connected: Real working models as tangible interfaces for architectural design. In Global Design and Local Materialization. Springer-Verlag Berlin Heidelberg, 210–221. DOI:<a href="http://dx.doi.org/10.1007/978-3-642-38974-0_20">http://dx.doi.org/10.1007/978-3-642-38974-0_20</a></small></p>
+<p><small>Source: <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://cdp.ai.ar.tum.de/">Dr.-Ing. Gerhard Schubert, Technische Universität München</a></small></p>
+</section>
+
+<!-- --SLIDE 8-- Augmented Reality Sandbox -->
+<section>
+<h2>Augmented sandboxes</h2>
+<img class="stretch" src="img/history/SARndbox_1.jpg">
+<p><b>Augmented Reality Sandbox, 2012-present</b></p>
+<p><small>Source: <i class="fa fa-copyright" aria-hidden="true"></i> <a href="http://idav.ucdavis.edu/~okreylos/ResDev/SARndbox/index.html">Oliver Kreylos, UC Davis</a></small></p>
+</section>
+<!-- https://youtu.be/j9JXtTj0mzE -->
+
+<!-- --SLIDE 9-- inFORM -->
+<section>
+<h2>Actuated pin tables</h2>
+<img class="stretch" src="img/history/inform.jpg">
+<p><b>inFORM, 2013-present</b></p>
+<p><small>Sean Follmer, Daniel Leithinger, Alex Olwal, Akimitsu Hogge, and Hiroshi Ishii. 2013. inFORM: dynamic physical affordances and constraints through shape and object actuation. In Proceedings of the 26th annual ACM symposium on User interface software and technology - UIST ’13. New York, New York, USA: ACM Press, 417–426. DOI:<a href="http://dx.doi.org/10.1145/2501988.2502032">http://dx.doi.org/10.1145/2501988.2502032</a></small></p>
+<p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i> <a href="http://tangible.media.mit.edu/project/inform/">Tangible Media Group, MIT Media Lab</a></small></p>
+</section>
+
+<!-- --SLIDE 9-- The Augmented REality Sandtable (ARES) -->
+<section>
+<h2>Augmented sandboxes</h2>
+<img height="250px" src="img/history/ares_2.png">
+<img height="250px" src="img/history/ares_3.png">
+<p><b>The Augmented REality Sandtable (ARES), 2015-present</b></p>
+<p><small>Charles R. Amburn, Nathan L. Vey, Michael W. Boyce, and MAJ Jerry R. Mize. 2015. The Augmented REality Sandtable ( ARES ). US Army Research Laboratory. ARL-SR-0340. DOI:<a href="http://dx.doi.org/10.13140/RG.2.1.2685.0006">http://dx.doi.org/10.13140/RG.2.1.2685.0006</a>
+</small></p>
+<p><small>Source: <i class="fa fa-copyright" aria-hidden="true"></i> US Army Research Laboratory</small></p>
+</section>
+
+<!-- TL -->
+
+<!-- --SLIDE 10-- Tangible Landscape -->
+<section data-background="img/system/tangible_landscape.jpg">
+<h1 class="shadow">Tangible Landscape</h1>
+<h3 class="shadow">A tangible user interface powered by open source GIS</h3>
+<p class="shadow">2013-present</p>
+<img height="150px" src="img/logos/logo_black.png">
+<!--<p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i> <a href="https://tangible-landscape.github.io">NCSU GeoForAll Lab</a></small></p>-->
+</section>
+
+
+<!-- --SLIDE 12-- Real time interaction Video -->
+<section>
+<h2>Tangible interaction with GIS</h2>
+<video  data-autoplay class="stretch" style="margin-top: 1em" controls>
+<source src="video/tl_flow.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>With Tangible Landscape you can hold a GIS in your hands - feeling the shape of the earth, sculpting its topography, and directing the flow of water.</p>
+</section>
+
+<!-- --SLIDE 13-- Physical setup -->
+<section>
+<h2>How it works ? </h2>
+
+<img class="stretch" src="img/New_setup.png">
+
+    <aside class="notes">
+      Using 3D modelling for aesthtic discovery along with quantative assessment
+    </aside>
+
+</section>
+
+<!-- --SLIDE 14-- GRASS GIS -->
+<section>
+    <h2>GRASS GIS</h2>
+    <img class="stretch" src="img/hexagons_3d_white_outlier.png">
+    <ul>
+        <li>Geographic Information System </li>
+        <li>Free and open source </li>
+        <li>Extensive Library</li>
+        <li>Easy scripting in Python, fast algorithms in C/C++</li>
+    </ul>
+
+    <aside class="notes">
+      For Geospatial analysis, we GRASS GIS which is a free and open source software. It has a python API that allows for easy high-level development and C++ for developing efficient algorithms.
+      The softawre is extensively used and maintained by scientific communities in various domains ranging from Geologists to ecologists and urban planners,
+      resulting in more than 350 simulation modules backed by peer-reviewed publications.
+      It supports various datatypes including vectors, rasters, 3D raster and temporal data.
+    </aside>
+
+</section>
+
+<!-- --SLIDE 15-- BLENDER -->
+<section>
+
+<h2>Blender</h2>
+<img class="stretch" src="img/blender_sample.jpg">
+
+<ul>
+  <li> 3D modeling, rendering, animation, physics, and game engine
+  <li> Free and open source, easy scripting in Python  </li>
+  <li> GIS and VR plugins </li>
+  <li> Real-time raytraced rendering </li>
+</ul>
+<!-- <p style="font-size:0.5em"> agiro.cgsociety.org </p>-->
+
+    <aside class="notes">
+
+    We use blender for 3D modelling which is a free and open source program for modeling, rendering, simulation, animation, and game design.
+    The software has an internal python-based IDE and add-ons for importing GIS data to georeference the 3d scene and displaying the viewport in HMDs.
+    It also allows realtime high-quality rendering and shading at the viewport.
+
+    </aside>
+</section>
+
+<!-- --SLIDE 16--Software Architecture -->
+<section>
+<h2> Software Architecture </h2>
+<img class="stretch" src="img/Coupling_diagram.jpg">
+
+    <aside class="notes">
+
+    Briefly describing the workflow, GRASS GIS and Blender are coupled either through loose file-based communication or with Sockets through network. As user interacts with the tangible model or objects, the depth and color information is scanned using kinenct or a similar 3D sensor.
+    The scanned informartion is processed is used as input for geodpatial analysis in GRASS GIS. Examples include hyrodolgical simulations, erosion, sedimentation, landform detection, fire spread and so on.
+    The analysis output is then projected as a map back onto the model or as numerical ouput displayed next to the model.
+    In blender, We implemented a monitoring module that constantly watches the directory, identifies the type of incoming information, and applies relevant operations needed to update the 3d model. The input data can range from geospatial features like a raster or a point cloud, simple coordinates as a text file, or signals that prompt a command such as removing an object from the scene.
+
+    </aside>
+
+</section>
+
+<!-- --SLIDE-- 17: Interactions -->
+<section>
+<h2>Interactions</h2>
+<img class="stretch" src="img/interactions.png">
+<table width="100%">
+        <col width="16%">
+        <col width="18%">
+        <col width="18%">
+        <col width="18%">
+        <col width="18%">
+        <tr>
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">surface
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">points
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">lines
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;" >areas
+            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;" >areas
+        </tr>
+</table>
+<aside class="notes">
+
+In addition to the sculpting, We have developed other interaction modes suitable to a particular design feature.
+For example, tangible objects like wooden marker can be used to specify isolated objects ,lets say a building  or a waypoints, single trees and etc.
+Laser pointer can be used to draw linear features like routes.
+<br>Another option is to use colored sand to create polygons where the color represents certain attribute of the polygon and the height of the sand can represent intensity of that property.</br>
+<br>Our most recent interaction is creating areas using colored felt of different shapes placed on the model.</br>
+</aside>
+</section>
+
+
+<!-- --SLIDE 18--Landforms -->
+
+<section>
+<h2> Landform and water </h2>
+<img class="stretch" src="img/coupling_case.jpg">
+<!-- <video data-autoplay  width="800" src="img/water2.mp4" frameborder="0"></iframe> -->
+
+   <aside class="notes">
+    As an example, we show a simple landscape design procedure.
+    In the first step user sculpts the terrain to create a pond and regulate surface water flow. As she manipulates the landscape, Water flow and accumulation simulations are continuously projected onto the physical model.
+    Numeric indicators about the depth and surface area of the retained water is projected.
+    Also, point-cloud and water polygon is transferred to blender update the 3D model.
+   </aside>
+
+</section>
+
+<!----SLIDE 19-- Plant species -->
+<section>
+<h2> Vegetation  </h2>
+<img class="stretch" src="img/coupling_case2.jpg">
+
+  <aside class="notes">
+
+  Users can design tree patches using colored felt pieces. They can either draw and cut their prefered shapes using scissors, or select from a library of cutouts with various shapes.
+  Each color represents a landscape class based on National landcover datast classification, like decidous, evergreen etc. For instance in this example green denotes evergreen class and
+  eastern pine trees, red denotes decidous and red maple and blue represents river birch which is suitable for soil remediation .
+  Grass GIS performs image segmentation and classification to the scanned image to assign RGB values to their corresponding landscape classes.
+  Using landscape structure analysis we compute and project various metrics related to landscape heterogeneity, biodiversity and complexity,
+  which as you can see is projected below the landscape model.
+
+  After importing, Blender applies a particle system modifier to populate corresponding species in each patch based on a predefined spacing and density,related to each specie.
+  Some degree of randomness is applied to the size, rotation and sucsession of species to mimic the realworld representation of a patch.
+
+  </aside>
+
+</section>
+
+<!-- --SLIDE 20-- Trails, features -->
+<section>
+<h2> Paths </h2>
+<img class="stretch" src="img/coupling_case3.jpg">
+
+ <aside class="notes">
+ (Show the trail and wooden cubes.)
+ Additionally users can uses tangible objects, in this case wooden cubes to designtate a pathway, in this example a baord walk.
+ As user inserts each of the chekpoints, Grass GIS, recalculetes and projects an optimal route using an algorithm that computes the least cost walking path.
+ A profile of the road and the slope of the segments are projected as feedback (show them).
+
+ Additionally, the polyline feature is processed in Blender as a walktrough simulation that can viewed on screen or in HMD.
+
+ </aside>
+
+</section>
+
+<!----SLIDE 21-- Human-views -->
+<section>
+<h2> Cameras </h2>
+<img class="stretch" src="img/coupling_case7.jpg">
+
+ <aside class="notes">
+   The 3D model is interactive so anytime during the interaction users can freely navigate in the environment and explore diffrent vantage points using the mouse.
+   But we wanted to keep that feature interactive as well. We used wooden marker with colored tip, that denotes the viewers location and direction of view.
+   The feature is exported as a polyline feature. Once imported in blender, The scene camera is then relocated to the line’s starting point and the direction of view is aligned to the line’s endpoint.
+ </aside>
+
+</section>
+
+<!----SLIDE 22 immersion-- -->
+<section>
+  <h2> Immersion </h2>
+   <video data-autoplay class="stretch"  src="video/immersion.mp4" frameborder="0"></iframe>
+
+<aside class="notes">
+Using a virtual reality addon, blender viewport is continuously displayed in both viewport and headmounted display,
+so users can pick up the headset and get immersed in their prefered views.
+One additional camera is also set to follow the imported trail feature to initiate a walkthrough animation if required.
+</aside>
+</section>
+
+<!----SLIDE 23 Realism-- -->
+
+<section>
+
+<h2> Realism </h2>
+<img class="stretch" src="img/realism.jpg" >
+<aside class="notes">
+
+Optionally, user can manipulate degree of realism. We assigned each 3D feature from the sky to the trees to a low-poly counterpart.
+Both low-poly models and blender scene are rendered in realtime and update almost instantly.
+
+</aside>
+
+</section>
+
+<section>
+<h2> Realism </h2>
+<img class="stretch" src="img/coupling_case5.jpg">
+
+
+</section>
+
+<!-- --SLIDE 26 --Future Work -->
+
+<section>
+<h2> Road map: Eevee Renderer for Blender 2.8 </h2>
+<video data-autoplay class="stretch" src="video/Eevee_edit.mp4" frameborder="0"></iframe>
+<ul>
+<li> Real-time physically based-render engine, OpenGL 3.3+ </li>
+</ul>
+<aside class="notes">
+
+It is possible to achieve more enhanced realism with the recently developed render engine, EEvee.
+Eevee is a fully-featured physically based-rendering engine for real-time visualization.
+It suports advanced rendering features such as volumetrics, screen-space reflections and refractions, soft shadows as well as
+post-processing effects such as ambient occlusion, depth of field, camera motion blur and bloom.
+
+</aside>
+<p><small>Source: <i class="fa fa-creative-commons" aria-hidden="true"></i><a href="https://www.blender.org/2-8/">Blender organization</a></small></p>
+</section>
+
+<!-- --SLIDE 27 --TL + robotic fabrication + streaming data + autonomous construction -->
+<section>
+<h2>Tangible Landscape</h2>
+<img  class="stretch" src="img/system/system_schema_land.png">
+<p> With robotic fabrication, streaming data, & autonomous construction</p>
+</section>
+
+<!-- Erosion control -->
+<section data-background-image="img/interaction/background_interaction_felt.png">
+<h2>Applications: erosion control</h2>
+<!--<img width="900px" src="img/felt/felt.png">-->
+<img width="23%" src="img/felt/felt_1.jpg">
+<img width="23%" src="img/felt/felt_2.jpg">
+<img width="23%" src="img/felt/felt_3.jpg">
+<img width="23%" src="img/felt/felt_4.jpg">
+<p>Modifying land cover with colored felt
+<!-- Adding grass (light green) and patches of trees (darker green)
+changes the c-factor thus reducing erosion. -->
+</p>
+</section>
+<!-- Visibility analysis -->
+<section data-background-image="img/interaction/background_interaction_hands_markers.png">
+<h2>Applications: visibility</h2>
+<video  data-autoplay class="stretch" controls>
+<source src="video/tl_visibility.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Visibility and line of sight</p>
+</section>
+
+<!-- Solar analysis-->
+<section data-background-image="img/interaction/background_interaction_hands.png">
+<h2>Applications: solar analysis</h2>
+<img width="32%" src="img/applications/solar_1.jpg">
+<img width="32%" src="img/applications/solar_2.jpg">
+<img width="32%" src="img/applications/solar_3.jpg">
+<!--<img width="32%" src="img/applications/solar.gif">-->
+<p>Solar irradiation and cast shadows</p>
+</section>
+
+<!-- Trail Planning
+<section data-background-image="img/interaction/background_interaction_hands_markers.png">
+<h2>Applications: trail planning</h2>
+<img width="32%" src="img/applications/trail_1.jpg">
+<img width="32%" src="img/applications/trail_2.jpg">
+<img width="32%" src="img/applications/trail_4.jpg">
+<p>Optimized trail routing between waypoints based on energetics, topography, and cost maps with feedback including trail slopes and viewsheds</p>
+</section>-->
+
+<!-- Soil moisture
+<section data-background-image="img/interaction/background_interaction_hands_markers.png">
+<h2>Applications: 3D soil moisture exploration</h2>
+<img height="190px" src="img/applications/subsurface_1.jpg">
+<img height="190px" src="img/applications/subsurface_2.jpg">
+<img height="190px" src="img/applications/subsurface_3.jpg">
+<!--<img width="80%" src="img/applications/subsurface_cross_section.png">
+</section>
+-->
+
+<!-- Fire -->
+<section data-background-image="img/interaction/background_interaction_hands.png">
+<h2>Applications: wildfire spread</h2>
+<video data-autoplay class="stretch" controls>
+<source src="video/tl_fire.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Designing and testing fire breaks</p>
+</section>
+
+<!-- Erosion control
+<section data-background-image="img/interaction/background_interaction_hands.png">
+<h2>Applications: erosion control</h2>
+<p>Sculpting a check dam to retain storm water and reduce erosion
+<img width="32%" src="img/felt/felt_4.jpg">
+<img width="32%" src="img/felt/checkdam_1.jpg">
+<img width="32%" src="img/felt/checkdam_2.jpg">
+</section>
+-->
+
+
+
+<!-- Sudden Oak Death
+<section class="textimg">
+<h2>Applications: Sudden Oak Death management</h2>
+<div>
+<p> Using Tangible Landscape in participatory modeling:
+  <ul style="">
+    <li>participants together explore options
+    to slow down the spread of SOD in Sonoma
+  using tangible user interface</li>
+    <li>stochastic, spatially-explicit model (Meentemeyer et al. 2011) implemented in R (by F. Tonini)</li>
+  </ul>
+</div>
+<img width=40% src="img/baseline_2014.gif">
+</section>
+<section data-background-image="img/interaction/background_interaction_markers.png">
+<h2>Applications: Sudden Oak Death management</h2>
+<iframe data-autoplay width="853" height="480" src="https://www.youtube.com/embed/dnOhOFHAkEU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+</section>
+-->
+
+<!-- Futures-->
+<section>
+<h2>Applications: urban growth</h2>
+<img width="32%" src="img/applications/Sod_1.png">
+<img width="32%" src="img/applications/Sod_2.png">
+<img width="32%" src="img/applications/Sod_anim.gif">
+<p>Simulation of urban growth scenarios with FUTURES model</p>
+</section>
+
+<!-- Coastal flooding -->
+<section data-background-image="img/interaction/background_interaction_hands.png">
+<h2>Applications: coastal flooding</h2>
+<img width="32%" src="img/applications/tl_coastal_1.png">
+<img width="32%" src="img/applications/tl_coastal_2.png">
+<!--<img width="22%" src="img/tl_coastal_3s.png">-->
+<img width="32%" src="img/applications/tl_coastal_4.png">
+<p>Save houses from coastal flooding by building coastal defenses</p>
+<p><small>Structured problem-solving with rules, challenging objectives, and scoring</small></p>
+</section>
+
+<!----SLIDE 27 -- Open source -->
+<section>
+<h2>Open source</h2>
+<!--<p><a href="https://github.com/baharmon/tangible_topography"> Repository with experiment instructions, scripts, data, and results</a></p>-->
+<p>Tangible Landscape plugin for GRASS GIS <br>
+    <a href="https://github.com/tangible-landscape/grass-tangible-landscape">
+        github.com/tangible-landscape/grass-tangible-landscape
+    </a></p>
+    <p>Tangible Landscape plugin for Blender <br>
+        <a href="https://github.com/tangible-landscape/tangible-landscape-immersive-extension">
+            github.com/tangible-landscape/tangible-landscape-immersive-extension
+        </a></p>
+<p>GRASS GIS module for importing data from Kinect v2 <br>
+    <a href="https://github.com/tangible-landscape/r.in.kinect">
+        github.com/tangible-landscape/r.in.kinect
+    </a></p>
+<p>Tangible Landscape repository on Open Science Framework <br>
+    <a href="https://osf.io/w8nr6/">
+        osf.io/w8nr6
+    </a></p>
+
+<img width="20%" src="img/logos/gpl.png">
+<aside class="notes">
+
+This system and all other development made by our team is free and open source and we are committed to help you setting up your own Tangible landscape system.
+</aside>
+
+</section>
+
+<!-- <!----SLIDE 27 resources -- -->
+<section>
+<h3>Resources</h3>
+<!-- website, open education paper, book -->
+<ul>
+    <li>Tangible Landscape website:  <a href="https://tangible-landscape.github.io">tangible-landscape.github.io</a></li>
+    <li>Tangible Landscape wiki: <br><a href="https://github.com/tangible-landscape/grass-tangible-landscape/wiki">github.com/tangible-landscape/grass-tangible-landscape/wiki</a> </li>
+    <li>Book: <a href="http://www.springer.com/us/book/9783319257730">
+        <em>Tangible Modeling with Open Source GIS</em></a></li>
+<li><a href="https://www.researchgate.net/publication/309458110_Immersive_Tangible_Geospatial_Modeling">
+    Immersive Tangible Geospatial Modeling.</a> Proceedings of ACM SIGSPATIAL 2016.</li>
+</ul>
+<!-- <img width="20%" src="img/tl_book_cover.png"> -->
+<img  class="stretch" src="img/logos/tl_logo.png">
+<aside class="notes">
+
+If you are interested to learn more about Tangible landscape, These are some useful resources that can get you started.
+
+</aside>
+
+
+</section>
+
+
+<!----SLIDE 28 Video-- -->
+
+<section>
+  <h3>Designing with Tangible Landscape</h3>
+   <video data-autoplay class="stretch"  src="video/case_study_video.mp4" frameborder="0"></iframe>
+   <aside class="notes">
+
+     While I am taking the questions, you can look at this video to see how an ecological scientist and designer work together to design a landscape.
+     Through the design process, please note that how the developments enables the dialogue between ecological assessment and aesthetic evaluation.
+
+    </aside>
+</section>
+
+
+<!----
+<section data-markdown>
+  |Markdown | Less | Pretty|
+  |:-------------:|: -------------:|
+  |![Blender Viewport](img/realism.jpg) | ![Blender Viewport](img/realism.jpg)
+  |hello|Hello| -->
+
+
+<!-- This is a generated file. Do not edit. -->
+        </div>  <!-- slides -->
+
+    </div>  <!-- reveal -->
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                // Display controls in the bottom right corner
+                controls: false,
+
+                // Display a presentation progress bar
+                progress: true,
+
+                center: true,
+
+                // Display the page number of the current slide
+                slideNumber: false,
+
+                // Enable the slide overview mode
+                overview: true,
+
+                // Turns fragments on and off globally
+                fragments: true,
+
+                // The "normal" size of the presentation, aspect ratio will be preserved
+                // when the presentation is scaled to fit different resolutions. Can be
+                // specified using percentage units.
+                 width: 1060,
+                // height: 700,
+
+                // Factor of the display size that should remain empty around the content
+                margin: 0.05,  // increase?
+
+                // Bounds for smallest/largest possible scale to apply to content
+                minScale: 0.5,
+                maxScale: 5.0,
+
+                theme: Reveal.getQueryHash().theme,  // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+                // Push each slide change to the browser history
+                history: true,
+                // Enable keyboard shortcuts for navigation
+                keyboard: true,
+
+                // Vertical centering of slides
+                center: true,
+
+                // Enables touch navigation on devices with touch input
+                touch: true,
+
+                // Loop the presentation
+                loop: false,
+                // Flags if the presentation is running in an embedded mode,
+                // i.e. contained within a limited portion of the screen
+                embedded: false,
+
+                // Number of milliseconds between automatically proceeding to the
+                // next slide, disabled when set to 0, this value can be overwritten
+                // by using a data-autoslide attribute on your slides
+                autoSlide: 0,
+
+                // Stop auto-sliding after user input
+                autoSlideStoppable: true,
+
+                // Enable slide navigation via mouse wheel
+                mouseWheel: false,
+
+                // Hides the address bar on mobile devices
+                hideAddressBar: true,
+
+                // Opens links in an iframe preview overlay
+                previewLinks: false,
+
+                // Transition speed
+                transitionSpeed: 'default', // default/fast/slow
+
+                // Transition style for full page slide backgrounds
+                backgroundTransition: 'none', // default/none/slide/concave/convex/zoom
+
+                // Number of slides away from the current that are visible
+                viewDistance: 3,
+
+                // Parallax background image
+                //parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+                // Parallax background size
+                //parallaxBackgroundSize: '' // CSS syntax, e.g. "2100px 900px"
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+
+        </script>
+
+    </body>
+</html>
