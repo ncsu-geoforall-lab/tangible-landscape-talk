@@ -29,6 +29,7 @@ cp EDRA_2017.html ./build/
 cp worldbank2017.html ./build/
 cp ICC_2017.html ./build/
 cp FOSS4G_2017.html ./build/
+cp ACADIA_2017.html ./build/
 
 # make this presentation primary for convenience
 cp build/geoforall-webinar.html build/index.html
