@@ -8,6 +8,7 @@ NCSU GeoForAll Lab Tangible Landscape talks
  * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/worldbank2017.html
  * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ICC_2017.html
  * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/FOSS4G_2017.html
+ * https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ACADIA_2017.html
 
 Building and publishing pages for this repository
 -------------------------------------------------
