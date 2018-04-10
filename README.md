@@ -1,12 +1,12 @@
 NCSU GeoForAll Lab Tangible Landscape talks
 ===========================================
- * [USIALE_conference, April 2018, Chicago, Il](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/USIALE_2018.html#/)
+ * [USIALE conference, April 2018, Chicago, Il](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/USIALE_2018.html#/)
  * [GeoForAll Webinar](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/geoforall-webinar.html)
  * [Conservation Biology Institute Webinar](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/cbi-webinar.html)
- * [ACADIA, Nov 2017, Cambridge, MA](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ACADIA_2017.html)
- * [Foss4G, Aug 2016, Boston, MA](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/FOSS4G_2017.html)
+ * [ACADIA conference, Nov 2017, Cambridge, MA](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ACADIA_2017.html)
+ * [Foss4G conference, Aug 2016, Boston, MA](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/FOSS4G_2017.html)
  * [World bank watershed symposium, June 2017, Washington D.C](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/worldbank2017.html)
- * [ICC, Jul 2017, Washington D.C](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ICC_2017.html)
+ * [ICC conference, Jul 2017, Washington D.C](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ICC_2017.html)
  * [EDRA conference, May 2017, Madison](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/EDRA_2017.html)
  * [NCGIS conference, Feb 2017, Raleigh, NC](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/ncgis2017.html)
  
