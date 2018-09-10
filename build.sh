@@ -31,6 +31,7 @@ cp ICC_2017.html ./build/
 cp FOSS4G_2017.html ./build/
 cp ACADIA_2017.html ./build/
 cp USIALE_2018.html ./build/
+cp worldbank-webinar.html ./build/
 
 # make this presentation primary for convenience
 cp build/geoforall-webinar.html build/index.html

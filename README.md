@@ -1,5 +1,6 @@
 NCSU GeoForAll Lab Tangible Landscape talks
 ===========================================
+ * [GFDRR/World Bank webinar, September 2018](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/worldbank-webinar.html#/)
  * [USIALE conference, April 2018, Chicago, Il](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/USIALE_2018.html#/)
  * [GeoForAll Webinar](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/geoforall-webinar.html)
  * [Conservation Biology Institute Webinar](https://ncsu-geoforall-lab.github.io/tangible-landscape-talk/cbi-webinar.html)
