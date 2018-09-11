@@ -248,35 +248,37 @@ and a new <b>PhD in Geospatial Analytics</b> launched in Fall 2018
 
 <!-- History -->
 <section>
-<h2>The first tangible interface prototypes</h2>
-<img height="250px" src="img/sandscape.png">
-<img height="250px" src="img/illuminating_clay.png">
+<h2>The evolution of tangible geospatial interfaces </h2>
+<img style="margin-bottom:0px" height="250px" src="img/illuminating_clay.png">
+<!-- <img style="margin-bottom:0px" height="250px" src="images/sandscape.png"> -->
+<img style="margin-bottom:0px" height="250px" src="img/tangeoms_5_s.jpg">
+<img style="margin-bottom:0px" height="250px" src="img/augmented_reality_sandbox.jpg">
+<p style="margin-top:0px"><small>Image source:
+     <a href="http://tangible.media.mit.edu/project/illuminating-clay/">MIT Media Lab</a>,<br>
+          <a href="http://idav.ucdavis.edu/~okreylos/ResDev/SARndbox/">http://idav.ucdavis.edu/</a></small></p>
 <!-- <img height="250px" src="img/tangeoms_2.jpg"> -->
-<p> <b>Sandscape</b> and <b>Illuminating Clay</b></p>
+<p>  <b>Illuminating Clay</b>,
+ <b>Tangible Geospatial Modeling System (TanGeoMS)</b>, <b>Augmented Reality Sandbox</b></p>
 
 <p><small>Ishii H., Ratti C., Piper B., Wang Y., Biderman A. and Ben-Joseph E. <a href="http://tmg-trackr.media.mit.edu/publishedmedia/Papers/188-Bringing%20clay%20and%20sand/Published/PDF">
     "Bringing clay and sand into digital design—continuous tangible user interfaces."</a> BT technology journal 22.4 (2004): 287-299.
-<p>Image source: <a href="http://tangible.media.mit.edu/project/illuminating-clay/">MIT Media Lab</a></small></p>
-</section>
-
-
-<section>
-<h2>Tangible interface linked with GIS</h2>
-<img height="250px" src="img/tangeoms_5_s.jpg">
-<img height="250px" src="img/tangeoms_2.jpg">
-<p><b>Tangible Geospatial Modeling System (TanGeoMS)</b></p>
-<p><small>L. Tateosian, H. Mitasova, B. A. Harmon, B. Fogleman, K. Weaver, and R. S. Harmon, <a href="http://baharmon.github.io/publications/tangible_geospatial_modeling.pdf">“TanGeoMS: tangible geospatial modeling system.,”</a>
+<br>L. Tateosian, H. Mitasova, B. A. Harmon, B. Fogleman, K. Weaver, and R. S. Harmon,
+ <a href="http://baharmon.github.io/publications/tangible_geospatial_modeling.pdf">
+     “TanGeoMS: Tangible Geospatial Modeling System,”</a>
      IEEE Trans. Vis. Comput. Graph., vol. 16, no. 6, pp. 1605–12, 2010.</small></p>
-</section>
 
-
-<section>
-<h2>Kinect-based systems</h2>
-<img height="250px" src="img/augmented_reality_sandbox.jpg">
-<p><b>Augmented Reality Sandbox by KeckCAVES</b>
-<p style="font-size:80%">Expensive laser scanners replaced by low cost Kinect
-<p><small>Image source:
-     <a href="http://idav.ucdavis.edu/~okreylos/ResDev/SARndbox/">http://idav.ucdavis.edu/</a></small></p>
+<aside class="notes">
+    To give you a little bit of background, tangible geospatial modeling
+    evolved from a broader concept of tangible user interfaces, which
+    simplify our interaction with digital information through physical environment.
+    In the special case of geospatial data, there has been
+    several systems in the past decade linking geospatial data and physical models,
+    such as Illuminating Clay, homegrown Tangible Geospatial Modeling System,
+    or more recent Augmented Reality Sandbox.
+    All these prototypes have various limitations in technology, resolution, speed,
+    and applicability to real-world data and modeling,
+    which tangible geospatial modeling needs to address.
+</aside>
 </section>
 
 
@@ -290,30 +292,55 @@ and a new <b>PhD in Geospatial Analytics</b> launched in Fall 2018
 
 <!-- How it works -->
 <section>
-<h2>How it works</h2>
-<img class="stretch" src="img/system_schema.png">
-<p>Tangible Landscape couples a digital and a physical model through a continuous cycle of 3D scanning, geospatial modeling, and projection</p>
+<h2>Tangible Landscape: real-time coupling with GIS</h2>
+<iframe data-autoplay <iframe width="560" height="315" src="https://www.youtube.com/embed/Cd3cCQTGer4?rel=0&amp;showinfo=0;loop=1&amp;playlist=Cd3cCQTGer4" frameborder="0" allowfullscreen></iframe>
+<img height="315px" src="img/system_schema.png">
+<p>Tangible Landscape couples a digital and a physical model through
+     a continuous cycle of 3D scanning, geospatial modeling, and projection.</p>
+<aside class="notes">
+    I addressed these questions through the development and application of
+    Tangible Landscape. The new thing Tangible Landscape brings is the real-time coupling
+    with a full-fledged geographic information system. This means
+    we can easily plug in and automate different analyses and geospatial workflows 
+    with real landscapes, which brings lot of flexibility.
+    Here you can see the coupling concept - 
+    A physical model is continuously scanned by a 3D scanner,
+    the scanned data are imported into GIS, specifically GRASS GIS,
+    where a 3D digital elevation model is computed and
+    a selected analysis or modeling is performed 
+    in this case contours are derived and water flow and ponding is simulated.
+    A composite image of the selected map layers is then projected over the model.
+    In this way the system couples the digital and physical models in a
+    continuous cycle of scanning, modeling and projection,
+    providing the user continuous feedback.
+</aside>
 </section>
 
 
 <!-- Interactions -->
 <section>
-<h2>Interactions</h2>
-<img class="stretch" src="img/interactions.png">
-<table width="100%">
-        <col width="18%">
-        <col width="20%">
-        <col width="20%">
-        <col width="20%">
-        <col width="20%">
-        <tr>
-            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">surface
-            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">points
-            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">lines
-            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">areas
-            <td style="vertical-align: middle; text-align:center; border-bottom: 0px; padding: 0;">areas
-        </tr>
-</table>
+<h2>Tangible interactions</h2>
+<img class="stretch" src="img/interaction/interactions_new.png">
+<aside class="notes">
+    So we have the scan of the physical model but how do we interact with the model?
+Tangible geospatial modeling requires different interactions to accommodate different geospatial models
+and model inputs.
+To make Tangible Landscape flexible in this regard,
+we developed multiple ways to interact with the physical models, taking the advantage
+of both depth and color information coming from the 3D scanner.
+You can create vector geometries using markers which can be interpreted
+as points or combined into polylines. Areas of different categories
+can be designed with pieces of colored felt.
+The surface from sand is most often interpreted as topography, but 
+it can also represent more abstract surfaces, such as cross sections of a volume
+or as probability or cost surface.
+Also, direction can be intuitively manipulated using a colored marker.
+
+To detect and interpret these tangible objects and colors, we use
+a combination of basic geospatial tools, such as raster algebra,
+more complex algorithms like traveling salesman heuristics,
+and also classic remote sensing techniques like image segmentation and classification.
+</aside>
 </section>
 
 
@@ -370,6 +397,14 @@ Your browser does not support the video tag.
 <img width="80%" src="img/cross_section.png">
 </section>
 
+<!-- Dam break -->
+<section>
+<h2>Applications: Dam break</h2>
+<video  data-autoplay height="500px" controls muted>
+<source src="video/dam_breach_3.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
 
 <!-- Fire -->
 <section data-background-image="img/background_interaction_hands.png">
@@ -379,22 +414,9 @@ Your browser does not support the video tag.
 
 
 <!-- SOD -->
-<section class="textimg">
+<section data-background-image="img/background_interaction_felt.png">
 <h2>Applications: Sudden Oak Death management</h2>
-<div>
-<p> Using Tangible Landscape in participatory modeling:
-  <ul style="">
-    <li>participants together explore options
-    to slow down the spread of SOD in Sonoma
-  using tangible user interface</li>
-    <li>stochastic, spatially-explicit model (Meentemeyer et al. 2011) implemented in R (by F. Tonini)</li>
-  </ul>
-</div>
-<img width=40% src="img/baseline_2014.gif">
-</section>
-<section data-background-image="img/background_interaction_markers.png">
-<h2>Applications: Sudden Oak Death management</h2>
-<iframe data-autoplay width="853" height="480" src="https://www.youtube.com/embed/dnOhOFHAkEU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+<img class="stretch" src="img/applications/SOD_workshop.jpg">
 </section>
 
 <!-- Futures -->
@@ -455,10 +477,10 @@ using a model of biological invasion in R</p>
 <!-- Setup -->
 <section>
     <h3>System setup</h3>
-    <p>projector, scanner, stand, computer, model, table</p>
+    <p>projector, scanner, stand, computer, model, table, screen</p>
     <img width="30%" src="img/projector_configuration_2.png">
-    <img width="30%" src="img/setup1.jpg">
-    <p>Total budget: $2500
+    <img width="30%" src="img/system/setup_screen.JPG">
+    <p>Total budget: $3000
 </section>
 
 
